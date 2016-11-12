@@ -12,31 +12,30 @@ block jsFirst
 
 block body
 	.wrapper
-		include ./layout/_header   
-		//- content 
-		h1 Hello Jade
-		-var a = "home"
-		-if (a == currentPage)
-			p home
-		-else
-			p boo hoo
- 
-		ul
-			li 1
-			li 2
-			li 3
+		include ./layout/_header
+		section.sec1.parallax
+			.content_block
+				.row
+					.col-sm-12
+						p tstsetset
+		section
+			h3(style='text-align:center;') Parallax Demo
+			p
+				| Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.
+		section.sec2.parallax
+			.caption
+				span.border(style='background-color:transparent;font-size:25px;color: #f7f7f7;') LESS HEIGHT
+		div(style='position:relative;')
+			div(style='color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;')
+				p Scroll up and down to really get the feeling of how Parallax Scrolling works.
+		section.sec3.parallax
+			.caption
+				span.border(style='background-color:transparent;font-size:25px;color: #f7f7f7;') SCROLL UP
+		div(style='position:relative;')
+			div(style='color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;')
+				p Scroll up and down to really get the feeling of how Parallax Scrolling works.
 
-		p 	Lorem ipsum dolor sit amet,
-			br/
-			| consectetur adipiscing elit.
-			br/
-			| Integer nec odio. Praesent libero. 
-			| Sed cursus ante dapibus diam. Sed nisi. 
-		ul
-			-for (var i = 2; i <= 12; i++)
-				-for (var j = 1; j <= 12; j++)
-					li #{i} x #{j} = #{i * j}
-		hr
+
 
 		//- end content
 		include ./layout/_footer
