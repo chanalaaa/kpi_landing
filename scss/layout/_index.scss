@@ -1,6 +1,22 @@
  // Content //////////////////////////////////
- body {
-     font-family: 'Prompt', sans-serif;
+ section {
+     color: #777;
+     background-color: white;
+     text-align: center;
+     padding: 7% 0;
+     text-align: justify;
+     &.sec1 {
+         background-image: url("https://unsplash.it/1200/600?image=70");
+         min-height: 400px;
+     }
+     &.sec2 {
+         background-image: url("https://unsplash.it/1200/600?image=53");
+         min-height: 400px;
+     }
+     &.sec3 {
+         background-image: url("https://unsplash.it/1200/600?image=98");
+         min-height: 400px;
+     }
  }
  
  .parallax {
@@ -17,29 +33,6 @@
      display: block;
      margin: 0 auto;
      position: relative;
- }
- 
- section {
-     color: #777;
-     background-color: white;
-     text-align: center;
-     padding: 50px 0px;
-     text-align: justify;
- }
- 
- section.sec1 {
-     background-image: url("https://unsplash.it/1200/600?image=70");
-     min-height: 400px;
- }
- 
- section.sec2 {
-     background-image: url("https://unsplash.it/1200/600?image=53");
-     min-height: 400px;
- }
- 
- section.sec3 {
-     background-image: url("https://unsplash.it/1200/600?image=98");
-     min-height: 400px;
  }
  
  .caption {
@@ -59,10 +52,15 @@
      letter-spacing: 10px;
  }
  
- h3 {
-     letter-spacing: 5px;
-     text-transform: uppercase;
-     color: #111;
+ .head-title {
+     .title {
+         margin: .2em 0;
+     }
+     .desc {}
+ }
+ 
+ .cards_block {
+     margin-top: 4rem;
  }
  
  // End Content //////////////////////////////////

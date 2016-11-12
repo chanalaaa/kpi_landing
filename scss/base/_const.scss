@@ -5,19 +5,29 @@ $md: "screen and (min-width: 780px)";
 $lg: "screen and (min-width: 960px)";
 */
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+html {
+    font-size: 62.5%;
 }
 
-.clearfix:after { 
-  clear: both;
+body {
+    font-size: 1.4em;
+    font-family: 'Prompt', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
 
 .clearfix {
-  *zoom: 1;
-} 
+    *zoom: 1;
+}
+
 @mixin bg_img($uri) {
     background-image: url($uri);
     @include background-size(cover);
