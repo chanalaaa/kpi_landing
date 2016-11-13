@@ -6,15 +6,15 @@
      padding: 7% 0;
      text-align: justify;
      &.sec1 {
-         background-image: url("https://unsplash.it/1200/600?image=70");
+         background-image: url("../images/bg1.jpg");
          min-height: 400px;
      }
      &.sec2 {
-         background-image: url("https://unsplash.it/1200/600?image=53");
+         background-image: url("../images/bg2.jpg");
          min-height: 400px;
      }
      &.sec3 {
-         background-image: url("https://unsplash.it/1200/600?image=98");
+         background-image: url("../images/bg3.jpg");
          min-height: 400px;
      }
  }
@@ -35,7 +35,15 @@
      position: relative;
  }
  
- .caption {
+
+ .head-title {
+ 	color: #fff;
+     .title {
+         margin: .2em 0;
+     }
+     .desc {}
+ }
+  .caption {
      position: absolute;
      left: 0;
      top: 50%;
@@ -50,13 +58,6 @@
      padding: 18px;
      font-size: 25px;
      letter-spacing: 10px;
- }
- 
- .head-title {
-     .title {
-         margin: .2em 0;
-     }
-     .desc {}
  }
  
  .cards_block {
