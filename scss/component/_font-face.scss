@@ -1,17 +1,22 @@
 @font-face {
-    font-family: 'prompt_b';
-    src: url('../fonts/prompt-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/prompt-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'prompt_r';
     src: url('../fonts/prompt-regular-webfont.woff2') format('woff2'),
          url('../fonts/prompt-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+@font-face {
+    font-family: 'prompt_m';
+    src: url('../fonts/prompt-medium-webfont.woff2') format('woff2'),
+         url('../fonts/prompt-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'prompt_l';
+    src: url('../fonts/prompt-light-webfont.woff2') format('woff2'),
+         url('../fonts/prompt-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
