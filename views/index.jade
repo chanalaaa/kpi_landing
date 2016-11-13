@@ -13,7 +13,8 @@ block jsFirst
 block body
 	.wrapper
 		include ./layout/_header
-		section.sec1.parallax
+		section#sec1.parallax
+			.bg#bg1
 			.content_block
 				.row.head-title
 					.col-sm-6.col-xs-12
@@ -45,7 +46,7 @@ block body
 							p.card-desc ดูแลคุณทุกการเดินทาง<br> ตลอด 24 ชม.
 							a.buy_btn(href="#") ซื้อประกัน v
 
-		section.sec2
+		section#sec2
 			.float_block
 				.row.flex
 					.col-sm-6.side-left
@@ -85,7 +86,8 @@ block body
 										p
 											| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 	
-		section.sec3.parallax
+		section#sec3.parallax
+			.bg#bg3
 			.float_block.relative
 				.row.flex
 					.col-sm-6.side-left
