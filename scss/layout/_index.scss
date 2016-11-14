@@ -133,7 +133,7 @@
      display: block;
      position: absolute;
      left: 0;
-     top: -45%;
+     top: -35%;
      right: 0;
      text-align: center;
      color: #000;
@@ -293,6 +293,11 @@
  
  .detail_block {}
  
+ .title {
+     font-size: 2em;
+     margin: 20px;
+ }
+ 
  .text_med {
      padding: 15px 0;
      img {
@@ -315,6 +320,17 @@
      }
      .side-center {
          border-top: 15px solid $mainblue;
+     }
+ }
+ 
+ #sec5 {
+     text-align: center;
+     color: #fff;
+ }
+  #sec6 {
+     text-align: center;
+     .title{
+
      }
  }
  
