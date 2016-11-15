@@ -2,13 +2,17 @@
  footer {
      padding: 15px;
      color: $mainblue;
-     font-family: prompt_l;
+     font-family: kanda;
      img {
          max-width: 400px;
          width: 50%;
      }
-     p{
-     	padding-top: 8px;
+     p {
+         padding-top: 8px;
+     }
+     span {
+         font-family: omnes;
+         font-size: 1em;
      }
  }
  
