@@ -96,6 +96,12 @@
  
  .cards_block {
      margin-top: 4rem;
+     @media #{$md} {
+         .col-sm-4 {
+             max-width: 320px;
+             margin: 0 auto 55px;
+         }
+     }
  }
  
  .card_item {
@@ -137,6 +143,9 @@
  .flex {
      display: flex;
      flex-direction: row;
+     @media #{$md} {
+         flex-direction: column;
+     }
  }
  
  .float_block {
@@ -151,6 +160,12 @@
      color: #000;
      margin: auto;
      min-height: 400px;
+     @media #{$md} {
+         width: 100%;
+         padding: 15px 25px;
+         position: relative;
+         margin-top: -15%;
+     }
      &.relative {
          position: relative;
      }
@@ -165,6 +180,9 @@
          min-height: 350px;
          box-shadow: 0px 6px 18px 1px rgba(107, 107, 107, .3);
          padding: 0;
+         @media #{$md} {
+             box-shadow: 0px 6px 18px 1px rgba(107, 107, 107, .2);
+         }
      }
      .side-center {
          background: #fff;
@@ -172,8 +190,11 @@
          box-shadow: 0px 6px 18px 1px rgba(107, 107, 107, .3);
          padding: 30px 30px 50px;
          text-align: center;
+         @media #{$md} {
+             box-shadow: 0px 6px 18px 1px rgba(107, 107, 107, .2);
+         }
          .side_content_block {
-             width: 75%;
+             width: 72%;
              margin: 0 auto;
          }
          .main_ico {
@@ -200,6 +221,28 @@
  
  #sec2 {
      margin-bottom: 30px;
+     .side_content_block {
+         @media #{$md} {
+             .img-content_block {
+                 padding-top: 65%;
+                 .img-content {
+                     width: 88%;
+                     position: absolute;
+                     top: -20%;
+                     left: 0;
+                     left: 0;
+                     right: 0;
+                     text-align: center;
+                     margin: 0 auto;
+                 }
+             }
+         }
+     }
+ }
+ 
+ .img-content_block {
+     position: relative;
+     padding: 15px 15px 25px;
  }
  
  #sec3 {
@@ -363,7 +406,7 @@
  
  #sec7 {
      .sec7_item {
-         padding: 0 20px;
+         padding: 0 10%;
          img {
              width: 100%;
              max-width: 50px;
