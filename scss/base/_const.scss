@@ -1,5 +1,5 @@
 $sm: "screen and (min-width: 375px)";
-$md-500: "screen and (min-width: 500px)";
+$md-500: "screen and (max-width: 500px)";
 $md: "screen and (max-width: 768px)";
 $lg: "screen and (min-width: 992px)";
 html {
@@ -56,6 +56,7 @@ a,
 p {
     font-size: 1.5em;
     line-height: 1em;
+    color: $darkgray;
 }
 
 .hide-sm {

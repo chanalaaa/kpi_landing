@@ -4,15 +4,29 @@
      color: $mainblue;
      font-family: kanda;
      img {
-         max-width: 400px;
+         max-width: 220px;
+         min-width: 175px;
          width: 50%;
+         @media #{$md} {
+             text-align: center;
+         }
      }
      p {
          padding-top: 8px;
+         color: $mainblue;
+         @media #{$md} {
+             font-size: 1.2em;
+             text-align: center;
+         }
      }
      span {
          font-family: omnes;
          font-size: 1em;
+     }
+     .right {
+         @media #{$md} {
+             text-align: center !important;
+         }
      }
  }
  
