@@ -348,6 +348,15 @@
          }
      }
      
+     .nav-tabs>li>a {
+         margin-right: 0px;
+         border-bottom: none !important;
+     }
+     
+     .nav-tabs {
+         border-bottom: none;
+     }
+     
      .side_in_tab {
          margin-top: 15px;
          position: relative;
@@ -377,12 +386,16 @@
              &.active {
                  a {
                      background: #fff !important;
+                     border-top: none;
+                     border-bottom: none;
+                     color: $darkgray;
+                     box-shadow: 1px -10px 10px -6px rgba(120, 120, 120, 0.1);
                  }
              }
              a {
                  border-radius: 0;
-                 background: #e0e0e0;
-                 color: gray;
+                 background: $lightgray;
+                 color: $gray_secondary;
              }
          }
          .tab-content {
