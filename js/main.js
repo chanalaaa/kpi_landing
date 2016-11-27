@@ -16,6 +16,10 @@ $(document).ready(function() {
         .setTween("#bg5", { y: "50%", ease: Linear.easeNone })
         .addTo(controller3);
 
+    $('a[data-toggle="tab"]').click(function() {
+        $('.collapse.in').collapse('hide');
+    });
+
 });
 
 /*
