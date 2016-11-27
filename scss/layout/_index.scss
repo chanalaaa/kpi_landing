@@ -82,6 +82,7 @@
          }
          .desc {
              color: #fff;
+             font-size: 1.7em;
          }
      }
      
@@ -256,9 +257,9 @@
          .float_block {
              top: 0;
              padding-top: 0;
-              @media #{$md} {
-                margin-top: -7%;
-              }
+             @media #{$md} {
+                 margin-top: -7%;
+             }
          }
          .bg_blue {
              position: absolute;
@@ -507,6 +508,10 @@
          p {
              text-align: center;
              color: #fff;
+             line-height: 1.5em;
+         }
+         .text_light p {
+             font-size: 1.8em;
          }
          .row > div {
              @media #{$md} {
@@ -546,11 +551,11 @@
          }
          .sec7_item {
              padding: 0 2%;
-              @media #{$md} {
+             @media #{$md} {
                  padding: 0 10%;
                  float: none;
                  margin: auto;
-              }
+             }
              &:first-child {
                  p.contect {
                      @media #{$md} {
@@ -584,8 +589,8 @@
              .col-xs-1 {
                  padding: 0;
              }
-             .col-xs-11{
-                text-align: left;
+             .col-xs-11 {
+                 text-align: left;
              }
          }
      }
