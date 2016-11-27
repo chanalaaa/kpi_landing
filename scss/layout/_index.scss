@@ -80,7 +80,9 @@
          .title {
              margin: .2em 0;
          }
-         .desc {}
+         .desc {
+             color: #fff;
+         }
      }
      
      .caption {
@@ -117,10 +119,22 @@
          text-align: center;
          min-height: 240px;
          border-radius: 7px;
-         img {
-             width: 50%;
-             height: auto;
-             max-width: 100px;
+         .card-ico {
+             width: 100px;
+             height: 100px;
+             position: relative;
+             text-align: center;
+             margin: 0 auto;
+             img {
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 width: 70%;
+                 height: auto;
+                 vertical-align: middle;
+                 margin: 0 auto;
+             }
          }
          .card-title {
              font-family: 'kanda_b';
@@ -141,8 +155,16 @@
          background: $mainblue;
          color: #fff;
          padding: 10px 20px;
+         white-space: nowrap;
+         text-decoration: none !important;
          &:hover {
              text-decoration: none;
+         }
+         img {
+             width: 13px;
+             height: 13px;
+             display: inline-block;
+             vertical-align: middle;
          }
      }
      
@@ -208,7 +230,7 @@
              }
              .main_ico {
                  width: 100%;
-                 max-width: 150px;
+                 max-width: 130px;
              }
              .title {
                  font-size: 3em;
@@ -246,11 +268,11 @@
                      }
                  }
              }
-              @media #{$md-500} {
-                  .img-content_block  .img-content {
-                    top: -40%;
-                  }
-              }
+             @media #{$md-500} {
+                 .img-content_block .img-content {
+                     top: -40%;
+                 }
+             }
          }
      }
      
@@ -315,7 +337,7 @@
          color: #000;
          text-align: left;
          font-size: 2.5rem;
-         background-image: url('http://placehold.it/600x600');
+         background-image: url('../images/ico/sec2_world.png');
          background-size: contain;
          background-repeat: no-repeat;
          background-position: left;
@@ -390,6 +412,13 @@
                  color: $mainblue;
                  text-decoration: none;
              }
+             img {
+                 padding: 1px;
+                 box-sizing: border-box;
+                 width: 28px;
+                 height: 28px;
+                 margin-right: 10px;
+             }
          }
      }
      
@@ -397,7 +426,7 @@
      
      .title {
          font-size: 3em;
-         margin: 20px;
+         margin: 20px 0;
      }
      
      .text_med {
@@ -418,6 +447,7 @@
      }
      
      #sec4 {
+         min-height: 370px !important;
          @media #{$md} {
              margin-top: -2px;
          }
@@ -438,7 +468,9 @@
              color: #fff;
          }
          .row > div {
-             width: 80%;
+             @media #{$md} {
+                 width: 80%;
+             }
              @media #{$md-500} {
                  width: 90%;
              }
@@ -457,9 +489,9 @@
              }
              img {
                  width: 100%;
-                 max-width: 130px;
+                 max-width: 120px;
                  display: block;
-                 margin: 0 auto 15px;
+                 margin: 25px auto 35px;
              }
              p {
                  font-family: kanda;
@@ -482,9 +514,10 @@
              }
              img {
                  width: 100%;
-                 max-width: 50px;
+                 width: 25px;
                  display: block;
                  padding-top: 10px;
+                 float: right;
              }
              p {
                  font-family: kanda;

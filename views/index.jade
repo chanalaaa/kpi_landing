@@ -25,22 +25,28 @@ block body
 						.row.cards_block
 							.col-sm-4
 								.card_item
-									img(src="http://placehold.it/500x500")
+									.card-ico
+										img(src="./images/ico/sec1_ico1.png")
 									p.card-title ประกันภัยการเดินทาง
 									p.card-desc มั่นใจในทุกเส้นทาง พร้อม <br>บริการ ช่วยเหลือฉุกเฉิน 24 ชม. ตลอด 24 ชม.
-									a.buy_btn(href="#") ซื้อประกัน v
+									a.buy_btn(href="#") ซื้อประกัน 
+										img(src="./images/ico/arrow_right.png")
 							.col-sm-4
 								.card_item
-									img(src="http://placehold.it/500x500")
+									.card-ico
+										img(src="./images/ico/sec1_ico2.png")
 									p.card-title ประกันรถยนต์
 									p.card-desc ดูแลคุณทุกการเดินทาง<br> ตลอด 24 ชม.
-									a.buy_btn(href="#") ซื้อประกัน v
+									a.buy_btn(href="#") ซื้อประกัน 
+										img(src="./images/ico/arrow_right.png")
 							.col-sm-4
 								.card_item
-									img(src="http://placehold.it/500x500")
+									.card-ico
+										img(src="./images/ico/sec1_ico3.png")
 									p.card-title ประกันภัยอัคคีภัย และทรัพย์สิน
 									p.card-desc สบายใจด้วยความคุ้มครอง <br>สิ่งปลูกสร้างและทรัพย์สินภายใน
-									a.buy_btn(href="#") ซื้อประกัน v
+									a.buy_btn(href="#") ซื้อประกัน 
+										img(src="./images/ico/arrow_right.png")
 
 		section#sec2
 			.float_block
@@ -58,12 +64,12 @@ block body
 									li.active
 										a(data-toggle='tab', href='#home') 
 											.tab_head 
-												img(src="http://placehold.it/400x400") 
+												img(src="./images/ico/sec2_num1.png") 
 												| ประกันเดินทาง<br>ต่างประเทศ
 									li
 										a(data-toggle='tab', href='#menu1') 
 											.tab_head 
-												img(src="http://placehold.it/400x400") 
+												img(src="./images/ico/sec2_num2.png") 
 												| ประกันเดินทาง<br>ภายในประเทศ
 								.tab-content
 									#home.tab-pane.fade.in.active
@@ -77,14 +83,26 @@ block body
 										p i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง
 
 										.showmore
-											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse1" ) ดูตารางเปรียบเทียบแผนประกัน
-										.showmore
-											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse2" ) ดูตารางเปรียบเทียบแผนประกัน
-										a.buy_btn(href="#") ซื้อประกัน v
+											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse1" ) 
+												img(src="./images/ico/arrow_expand.png")
+												| ดูตารางเปรียบเทียบแผนประกัน
+										a.buy_btn(href="#") ซื้อประกัน 
+											img(src="./images/ico/arrow_right.png")
 									#menu1.tab-pane.fade
-										h3 Menu 1
-										p
-											| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										ul
+											li
+												p แผนประกันภัยรับรองแล้วจากสถานทูตสบายใจใช้ยื่นขอวีซ่าเชงเก้น 
+											li
+												p คุ้มครองครอบคลุม อุบัติเหตุและเจ็บป่วย 
+											li
+												p วีซ่าไม่ผ่าน คืนเงิน 100%
+										p i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง
+										.showmore
+											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse2" ) 
+												img(src="./images/ico/arrow_expand.png")
+												| ดูตารางเปรียบเทียบแผนประกัน
+										a.buy_btn(href="#") ซื้อประกัน 
+											img(src="./images/ico/arrow_right.png")
 	
 		.row.for_collapse
 			.col-sm-10.col-centered
@@ -105,7 +123,7 @@ block body
 							.detail_block
 								.text_med.row
 									.col-xs-2
-										img(src="http://placehold.it/100x200")
+										img(src="./images/ico/sec3_car.png")
 									.col-xs-10.col-sm-6.col-md-10
 										p  เพิ่มความอุ่นใจให้คุณทุกเส้นทาง... ด้วยบริการช่วยเหลือฉุกเฉิน บนท้องถนน ตลอด 24 ชั่วโมง 
 
@@ -114,8 +132,11 @@ block body
 								.text_light
 									p ประกันภัยรถยนต์ประเภท 1, 2+, 3, หรือ 3+ และเลือกซื้อความคุ้มครองเพิ่มภัยน้ำท่วม หรือประกันภัยรถยนต์ ภาคบังคับ (พ.ร.บ.)
 										.showmore
-											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse3" ) ดูตารางเปรียบเทียบแผนประกัน
-							a.buy_btn(href="#") ซื้อประกัน v
+											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse3" )
+												img(src="./images/ico/arrow_expand.png")
+												| ดูตารางเปรียบเทียบแผนประกัน
+							a.buy_btn(href="#") ซื้อประกัน 
+								img(src="./images/ico/arrow_right.png")
 						
 					.col-sm-6.side-right
 						.img-content(style="background-image: url('http://placehold.it/1200x600')")
@@ -131,7 +152,7 @@ block body
 				.row.flex
 					.col-xs-12.side-center
 						.side_content_block
-							img.main_ico(src="http://placehold.it/600x600", alt="")
+							img.main_ico(src="./images/ico/sec4_ico1.png", alt="")
 							p.title ประกันอัคคีภัยและทรัพย์สิน
 							.text_med
 								p แผนประกันภัยทรัพย์สินภายในบ้าน Happy Home Protect คุ้มครองความสูญเสีย หรือความเสียหาย ของทรัพย์สินภายในบ้าน
@@ -151,13 +172,13 @@ block body
 						p.title ช่องทางการชำระเงินค่าเบี้ยประกันภัย
 					.col-sm-10.col-centered
 						.col-sm-4.sec6_item
-							img(src="http://placehold.it/600x600")
+							img(src="./images/ico/sec6_ico1.png")
 							p กรณีทำรายการผ่านระบบออนไลน์ สามารถชำระ ค่าเบี้ยประกันภัย ด้วยบัตรเครดิต ประเภทวีซ่า มาสเตอร์ หรือเจซีบี
 						.col-sm-4.sec6_item
-							img(src="http://placehold.it/600x600")
+							img(src="./images/ico/sec6_ico2.png")
 							p ชำระผ่านเคาน์เตอร์ ธนาคารกรุงไทย ธนาคารกรุงเทพ ธนาคารกรุงศรีอยุธยา ธนาคากสิกรไทย ธนาคารธนชาต ธนาคารไทยพาณิชย์ ธนาคารทหารไทย หรือ ธนาคารยูโอบี เข้าบัญชี บริษัท กรุงไทยพานิชประกันภัย จำกัด (มหาชน) 
 						.col-sm-4.sec6_item
-							img(src="http://placehold.it/600x600")
+							img(src="./images/ico/sec6_ico3.png")
 							p ชำระผ่านตู้ ATM ธนาคารกรุงไทย ธนาคารกรุงเทพ ธนาคารกรุงศรีอยุธยา ธนาคากสิกรไทย ธนาคารธนชาต ธนาคารไทยพาณิชย์ ธนาคารทหารไทย หรือ ธนาคารยูโอบี เข้าบัญชี บริษัท กรุงไทยพานิชประกันภัย จำกัด (มหาชน)
 		section#sec7
 				.row
@@ -165,7 +186,7 @@ block body
 						.row
 							.col-sm-6.sec7_item
 								.col-xs-2
-									img(src="http://placehold.it/300x300")
+									img(src="./images/ico/contact_phone.png")
 								.col-xs-10
 									p สอบถามข้อมูลทั่วไป<br>จันทร์-ศุกร์ เวลา 8.30-16.30 น.
 									p.contect 02-3950204 
@@ -173,7 +194,7 @@ block body
 										| 4775
 							.col-sm-6.sec7_item
 								.col-xs-2
-									img(src="http://placehold.it/300x300")
+									img(src="./images/ico/contact_person.png")
 								.col-xs-10
 									p สอบถามข้อมูลสินไหมทั่วไป<br>จันทร์-ศุกร์ เวลา 8.30-16.30 น.
 									p.contect 02-3950204 
