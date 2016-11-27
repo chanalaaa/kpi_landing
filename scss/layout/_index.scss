@@ -73,16 +73,31 @@
          display: block;
          margin: 0 auto;
          position: relative;
+         @media #{$lg} {
+             width: 100%;
+         }
+         @media #{$md} {
+             width: 80%;
+         }
      }
      
      .head-title {
          color: #fff;
+         margin: auto;
+         @media #{$lg} {
+             width: 80%;
+         }
+          @media #{$md} {
+             width: 100%;
+             text-align: center;
+         }
          .title {
              margin: .2em 0;
          }
          .desc {
              color: #fff;
              font-size: 1.7em;
+             font-family: kanda_b;
          }
      }
      
@@ -189,8 +204,10 @@
          color: #000;
          margin: auto;
          min-height: 400px;
-         @media #{$md} {
+         @media #{$lg} {
              width: 100%;
+         }
+         @media #{$md} {
              padding: 15px 25px;
              position: relative;
              margin-top: -15%;
@@ -420,6 +437,9 @@
                      color: $darkgray;
                      box-shadow: 1px -10px 10px -6px rgba(120, 120, 120, 0.1);
                  }
+                 .tab_head {
+                     font-family: kanda_b;
+                 }
              }
              a {
                  border-radius: 0;
@@ -449,10 +469,11 @@
      .showmore {
          margin-top: 2rem;
          a {
+             font-family: 'kanda_b';
              color: $darkgray;
+             text-decoration: none;
              &:hover {
                  color: $mainblue;
-                 text-decoration: none;
              }
              img {
                  padding: 1px;
@@ -467,6 +488,7 @@
      .detail_block {}
      
      .title {
+         font-family: 'kanda_b';
          font-size: 3em;
          margin: 20px 0;
      }
@@ -478,7 +500,7 @@
              min-width: 30px;
          }
          p {
-             font-family: kanda;
+             font-family: kanda_b;
          }
      }
      
@@ -527,6 +549,9 @@
          text-align: center;
          .sec6_item {
              padding: 0 40px;
+             @media #{$lg} {
+                 padding: 0 15px;
+             }
              @media #{$md} {
                  padding: 15px 15%;
              }
@@ -540,7 +565,7 @@
                  margin: 25px auto 35px;
              }
              p {
-                 font-family: kanda;
+                 font-family: kanda_b;
              }
          }
      }
@@ -571,17 +596,17 @@
                  float: right;
              }
              p {
-                 font-family: kanda;
+                 font-family: kanda_b;
                  color: #fff;
                  @media #{$md} {
                      line-height: .9em;
                  }
                  &.contect {
-                     font-family: kanda;
+                     font-family: kanda_b;
                      font-size: 1.9em;
                      line-height: 0.7em;
                      span {
-                         font-family: kanda;
+                         font-family: kanda_b;
                          font-size: .8em;
                      }
                  }
