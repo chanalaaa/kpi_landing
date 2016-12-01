@@ -1,0 +1,51 @@
+  .for_collapse {
+      padding: 0 0px;
+      width: 100%;
+      display: inline;
+      table {
+      	margin-bottom: 30px;
+          thead {
+              td {
+                  font-size: 1.5em;
+                  text-align: center;
+                  vertical-align: middle;
+              }
+          }
+          tbody {
+              td {
+                  font-size: 1.35em;
+              }
+          }
+      }
+  }
+  
+  .collapse_detail_block {
+      background: $lightgray;
+      padding: 20px 10%;
+      margin: 15px 0 30px;
+      font-family: 'kanda_b';
+      .title {
+          margin-top: 0;
+          font-family: kanda_b;
+          border-bottom: 1px solid $mainblue;
+      }
+      p.sub {
+          margin-top: 15px;
+          font-size: 1.3em;
+          font-family: 'kanda';
+      }
+      ul {
+          list-style-position: inside;
+          padding-left: 0;
+          color: $mainblue;
+          font-family: 'kanda';
+          p {
+              color: $darkgray;
+          }
+      }
+      li {}
+  }
+
+.fromsec3{
+	padding-bottom: 100px;
+}

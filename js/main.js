@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
     var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onLeave", duration: "200%" } });
-    var controller2 = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "300%" } });
+    var controller2 = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "250%" } });
     var controller3 = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "300%" } });
     new ScrollMagic.Scene({ triggerElement: "#sec1" })
         .setTween("#bg1", { y: "60%", ease: Linear.easeNone })
