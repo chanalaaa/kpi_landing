@@ -3,7 +3,7 @@
       width: 100%;
       display: inline;
       table {
-      	margin-bottom: 30px;
+          margin-bottom: 30px;
           thead {
               td {
                   font-size: 1.5em;
@@ -45,7 +45,28 @@
       }
       li {}
   }
-
-.fromsec3{
-	padding-bottom: 100px;
-}
+  
+  .fromsec3 {
+      //padding-bottom: 100px;
+      .nav-tabs li {
+          width: 20%;
+          &:first-child a {
+              //border-left: none;
+          }
+      }
+      table {
+          margin-bottom: 100px;
+          thead {
+              td {
+                  font-size: 1.5em;
+                  text-align: center;
+                  vertical-align: middle;
+              }
+          }
+          tbody {
+              td {
+                  font-size: 1.35em;
+              }
+          }
+      }
+  }
