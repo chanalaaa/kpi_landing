@@ -455,6 +455,9 @@
          .tab-content {
              padding: 30px;
              text-align: left;
+              @media #{$md} {
+                padding: 15px;
+              }
          }
      }
      

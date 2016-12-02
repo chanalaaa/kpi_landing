@@ -27,6 +27,9 @@
       padding: 20px 10%;
       margin: 15px 0 30px;
       font-family: 'kanda_b';
+      @media #{$md} {
+          padding: 20px 5px;
+      }
       .title {
           margin-top: 0;
           font-family: kanda_b;
@@ -62,6 +65,9 @@
       }
       table {
           margin-bottom: 100px;
+          @media #{$md} {
+              margin-bottom: 15px;
+          }
           thead {
               td {
                   font-size: 1.5em;
@@ -89,6 +95,11 @@
                       max-width: 20px;
                   }
               }
+          }
+      }
+      .side_in_tab .tab-content {
+          @media #{$md} {
+              padding: 0px;
           }
       }
   }
