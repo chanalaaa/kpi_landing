@@ -59,17 +59,13 @@
              padding: 2% 15px;
          }
      }
-     #parallax::before {
-    position: fixed;
-    content: '';
-}
+     
      .parallax {
          position: relative;
          //background-attachment: fixed;
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
-             overflow: hidden;
      }
      
      .content_block {
