@@ -68,7 +68,7 @@
  //     float: none;
  // }
  .navbar-brand {
-     width: 250px;
+     width: 300px;
      float: left;
      height: auto;
      padding: 7px 0px 0 25px;
@@ -80,10 +80,10 @@
      }
      @media #{$lg} {
          padding: 2px 0px 0 25px;
-         width: 330px;
+         width: 260px;
      }
      img {
-         width: 100%;
+         width: 95%;
      }
  }
  

@@ -24,7 +24,7 @@ block body
 					.col-sm-10.col-xs-12.col-centered
 						.row.cards_block
 							.col-sm-4
-								.card_item
+								.card_item#card_one
 									.card-ico
 										img(src="./images/ico/sec1_ico1.png")
 									p.card-title ประกันภัยการเดินทาง
@@ -32,7 +32,7 @@ block body
 									a.buy_btn(href="#") ซื้อประกัน 
 										img(src="./images/ico/arrow_right.png")
 							.col-sm-4(style="margin-top:30px;")
-								.card_item
+								.card_item#card_two
 									.card-ico
 										img(src="./images/ico/sec1_ico2.png")
 									p.card-title ประกันรถยนต์
@@ -40,7 +40,7 @@ block body
 									a.buy_btn(href="#") ซื้อประกัน 
 										img(src="./images/ico/arrow_right.png")
 							.col-sm-4
-								.card_item
+								.card_item#card_three
 									.card-ico
 										img(src="./images/ico/sec1_ico3.png")
 									p.card-title ประกันภัยอัคคีภัย และทรัพย์สิน
@@ -64,12 +64,12 @@ block body
 								.side_in_tab
 									ul.nav.nav-tabs
 										li.active
-											a(data-toggle='tab', href='#home') 
+											a(data-toggle='tab',data-toggleTab='sec2', href='#home') 
 												.tab_head 
 													img(src="./images/ico/sec2_num1.png") 
 													| ประกันเดินทาง<br>ต่างประเทศ
 										li
-											a(data-toggle='tab', href='#menu1') 
+											a(data-toggle='tab',data-toggleTab='sec2', href='#menu1') 
 												.tab_head 
 													img(src="./images/ico/sec2_num2.png") 
 													| ประกันเดินทาง<br>ภายในประเทศ
@@ -85,7 +85,7 @@ block body
 											p i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง
 
 											.showmore
-												a(href="javascipt:;" data-toggle="collapse" data-target="#collapse1" ) 
+												a(href="#home" data-toggle="collapse" data-target="#collapse1" ) 
 													img(src="./images/ico/arrow_expand.png")
 													| ดูตารางเปรียบเทียบแผนประกัน
 											a.buy_btn(href="#") ซื้อประกัน 
@@ -100,7 +100,7 @@ block body
 													p วีซ่าไม่ผ่าน คืนเงิน 100%
 											p i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง
 											.showmore
-												a(href="javascipt:;" data-toggle="collapse" data-target="#collapse2" ) 
+												a(href="#menu1" data-toggle="collapse" data-target="#collapse2" ) 
 													img(src="./images/ico/arrow_expand.png")
 													| ดูตารางเปรียบเทียบแผนประกัน
 											a.buy_btn(href="#") ซื้อประกัน 
@@ -129,9 +129,9 @@ block body
 								thead
 									tr
 										td(rowspan='2') ความคุ้มครอง
-										td(colspan='4')
+										td(colspan='4',style="background:#BBE3FA;")
 											div ผลประโยชน์ชดเชย (บาท)
-									tr
+									tr(style="background:#DFF1FC;")
 										td แผน วีซ่า
 										td แผน วีซ่าพลัส
 										td แผน วีซ่าอีลีท
@@ -235,10 +235,10 @@ block body
 					table.table.table-bordered
 						thead
 							tr
-								td(rowspan='2') ความคุ้มครอง2
-								td(colspan='4')
+								td(rowspan='2') ความคุ้มครอง 2
+								td(colspan='4',style="background:#BBE3FA;")
 									div ผลประโยชน์ชดเชย (บาท)
-							tr
+							tr(style="background:#DFF1FC;")
 								td แผน วีซ่า
 								td แผน วีซ่า พลัส
 								td แผน วีซ่า อีลีท
@@ -357,7 +357,7 @@ block body
 								.text_light
 									p ประกันภัยรถยนต์ประเภท 1, 2+, 3, หรือ 3+ และเลือกซื้อความคุ้มครองเพิ่มภัยน้ำท่วม หรือประกันภัยรถยนต์ ภาคบังคับ (พ.ร.บ.)
 										.showmore
-											a(href="javascipt:;" data-toggle="collapse" data-target="#collapse3" )
+											a(href="#collapse3" data-toggle="collapse" data-target="#collapse3" )
 												img(src="./images/ico/arrow_expand.png")
 												| ดูตารางเปรียบเทียบแผนประกัน
 							a.buy_btn(href="#") ซื้อประกัน 

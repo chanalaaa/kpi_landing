@@ -47,19 +47,19 @@
             <div class="col-sm-10 col-xs-12 col-centered">
               <div class="row cards_block">
                 <div class="col-sm-4">
-                  <div class="card_item">
+                  <div id="card_one" class="card_item">
                     <div class="card-ico"><img src="./images/ico/sec1_ico1.png"></div>
                     <p class="card-title">ประกันภัยการเดินทาง</p>
                     <p class="card-desc">ดูแลคุณตลอดการเดินทาง<br>ตลอด 24 ชม.</p><a href="#" class="buy_btn">ซื้อประกัน <img src="./images/ico/arrow_right.png"></a></div>
                 </div>
                 <div style="margin-top:30px;" class="col-sm-4">
-                  <div class="card_item">
+                  <div id="card_two" class="card_item">
                     <div class="card-ico"><img src="./images/ico/sec1_ico2.png"></div>
                     <p class="card-title">ประกันรถยนต์</p>
                     <p class="card-desc">มั่นใจในทุกเส้นทาง พร้อม<br>บริการ ช่วยเหลือฉุกเฉิน 24 ชม.</p><a href="#" class="buy_btn">ซื้อประกัน <img src="./images/ico/arrow_right.png"></a></div>
                 </div>
                 <div class="col-sm-4">
-                  <div class="card_item">
+                  <div id="card_three" class="card_item">
                     <div class="card-ico"><img src="./images/ico/sec1_ico3.png"></div>
                     <p class="card-title">ประกันภัยอัคคีภัย และทรัพย์สิน</p>
                     <p class="card-desc">สบายใจด้วยความคุ้มครอง<br>สิ่งปลูกสร้างและทรัพย์สินภายใน</p><a href="#" class="buy_btn">ซื้อประกัน <img src="./images/ico/arrow_right.png"></a></div>
@@ -88,12 +88,12 @@
                   <div class="side_in_tab">
                     <ul class="nav nav-tabs">
                       <li class="active">
-                        <a data-toggle="tab" href="#home">
+                        <a data-toggle="tab" data-toggleTab="sec2" href="#home">
                           <div class="tab_head"> <img src="./images/ico/sec2_num1.png">ประกันเดินทาง<br>ต่างประเทศ</div>
                         </a>
                       </li>
                       <li>
-                        <a data-toggle="tab" href="#menu1">
+                        <a data-toggle="tab" data-toggleTab="sec2" href="#menu1">
                           <div class="tab_head"> <img src="./images/ico/sec2_num2.png">ประกันเดินทาง<br>ภายในประเทศ</div>
                         </a>
                       </li>
@@ -114,7 +114,7 @@
                         <p>i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น
                           อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง</p>
                         <div class="showmore">
-                          <a href="javascipt:;" data-toggle="collapse" data-target="#collapse1"> <img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
+                          <a href="#home" data-toggle="collapse" data-target="#collapse1"> <img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
                         </div><a href="#" class="buy_btn">ซื้อประกัน <img src="./images/ico/arrow_right.png"></a></div>
                       <div id="menu1" class="tab-pane fade">
                         <ul>
@@ -131,7 +131,7 @@
                         <p>i-Insure ขอมอบแผนประกันการเดินทางต่างประเทศ ที่ดีที่สุด สำหรับคุณแผนวีซ่า แผนวีซ่าพลัส แผนวีซ่าอีลีท และแผน คอมพรีเฮนซีฟ แผนประกันการเดินทาง ที่ออกแบบให้ความคุ้มครอง เป็นไปตามเงื่อนไขที่สถานทูตกำหนดในวงเงิน 30,000 ยูโร สะดวก เมื่อขอยื่นวีซ่าในกลุ่มประเทศเชงเก้น
                           อุ่นใจไปกับทุกทริปการเดินทาง ด้วยเครือข่ายบริการ 24 ชั่วโมง</p>
                         <div class="showmore">
-                          <a href="javascipt:;" data-toggle="collapse" data-target="#collapse2"> <img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
+                          <a href="#menu1" data-toggle="collapse" data-target="#collapse2"> <img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
                         </div><a href="#" class="buy_btn">ซื้อประกัน <img src="./images/ico/arrow_right.png"></a></div>
                     </div>
                   </div>
@@ -172,11 +172,11 @@
                   <thead>
                     <tr>
                       <td rowspan="2">ความคุ้มครอง</td>
-                      <td colspan="4">
+                      <td colspan="4" style="background:#BBE3FA;">
                         <div>ผลประโยชน์ชดเชย (บาท)</div>
                       </td>
                     </tr>
-                    <tr>
+                    <tr style="background:#DFF1FC;">
                       <td>แผน วีซ่า</td>
                       <td>แผน วีซ่าพลัส</td>
                       <td>แผน วีซ่าอีลีท</td>
@@ -270,12 +270,12 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <td rowspan="2">ความคุ้มครอง2</td>
-                  <td colspan="4">
+                  <td rowspan="2">ความคุ้มครอง 2</td>
+                  <td colspan="4" style="background:#BBE3FA;">
                     <div>ผลประโยชน์ชดเชย (บาท)</div>
                   </td>
                 </tr>
-                <tr>
+                <tr style="background:#DFF1FC;">
                   <td>แผน วีซ่า</td>
                   <td>แผน วีซ่า พลัส</td>
                   <td>แผน วีซ่า อีลีท</td>
@@ -385,7 +385,7 @@
                   <div class="text_light">
                     <p>ประกันภัยรถยนต์ประเภท 1, 2+, 3, หรือ 3+ และเลือกซื้อความคุ้มครองเพิ่มภัยน้ำท่วม หรือประกันภัยรถยนต์ ภาคบังคับ (พ.ร.บ.)
                       <div class="showmore">
-                        <a href="javascipt:;" data-toggle="collapse" data-target="#collapse3"><img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
+                        <a href="#collapse3" data-toggle="collapse" data-target="#collapse3"><img src="./images/ico/arrow_expand.png">ดูตารางเปรียบเทียบแผนประกัน</a>
                       </div>
                     </p>
                   </div>

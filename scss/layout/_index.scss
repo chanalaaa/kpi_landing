@@ -59,13 +59,17 @@
              padding: 2% 15px;
          }
      }
-     
+     #parallax::before {
+    position: fixed;
+    content: '';
+}
      .parallax {
          position: relative;
-         background-attachment: fixed;
+         //background-attachment: fixed;
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
+             overflow: hidden;
      }
      
      .content_block {
@@ -136,6 +140,7 @@
          text-align: center;
          min-height: 240px;
          border-radius: 7px;
+         opacity: 0;
          .card-ico {
              width: 100px;
              height: 100px;
@@ -469,6 +474,7 @@
              color: $mainblue;
              p {
                  color: $darkgray;
+                 display: inline;
              }
          }
          li {}

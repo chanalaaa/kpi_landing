@@ -1,3 +1,9 @@
+  .table-bordered {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+  }
+  
   .for_collapse {
       padding: 0 0px;
       width: 100%;
@@ -5,10 +11,18 @@
       table {
           margin-bottom: 30px;
           thead {
+              tr:first-child {
+                  td {
+                      &:first-child {
+                          background: #83CFF4;
+                      }
+                  }
+              }
               td {
                   font-size: 1.5em;
                   text-align: center;
                   vertical-align: middle;
+                  border-color: $mainblue;
               }
           }
           tbody {
@@ -47,6 +61,7 @@
           font-family: 'kanda';
           p {
               color: $darkgray;
+              display: inline;
           }
       }
       li {}
@@ -59,6 +74,11 @@
           &:first-child a {
               //border-left: none;
           }
+          &.active {
+              a {
+                  color: $mainblue;
+              }
+          }
       }
       .tab_head {
           text-align: center;
@@ -69,6 +89,7 @@
               margin-bottom: 15px;
           }
           thead {
+              background: #83CFF4;
               td {
                   font-size: 1.5em;
                   text-align: center;
@@ -96,6 +117,9 @@
                   }
               }
           }
+      }
+      .side_in_tab {
+          background: #fff;
       }
       .side_in_tab .tab-content {
           @media #{$md} {
