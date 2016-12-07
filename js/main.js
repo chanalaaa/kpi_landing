@@ -11,7 +11,7 @@ $(document).ready(function() {
             .addTo(controller);
 
         new ScrollMagic.Scene({ triggerElement: "#sec3" })
-            .setTween("#bg3", { y: "30%", ease: Linear.easeNone })
+            .setTween("#bg3", { y: "27%", ease: Linear.easeNone })
             .addTo(controller2);
 
         new ScrollMagic.Scene({ triggerElement: "#sec5" })

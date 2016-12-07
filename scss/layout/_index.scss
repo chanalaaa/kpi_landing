@@ -442,7 +442,7 @@
                      border-bottom: none;
                      color: $darkgray;
                      box-shadow: 1px -10px 10px -6px rgba(120, 120, 120, 0.1);
-                         padding: 10px 15px;
+                     padding: 10px 15px;
                  }
                  .tab_head {
                      font-family: kanda_b;
@@ -609,10 +609,8 @@
                  margin: auto;
              }
              &:first-child {
-                 p.contect {
-                     @media #{$md} {
-                         padding-bottom: 20px;
-                     }
+                 @media #{$md} {
+                     padding-bottom: 20px;
                  }
              }
              img {
@@ -637,6 +635,12 @@
                          font-size: .8em;
                      }
                  }
+             }
+             a {
+                 font-family: kanda_b;
+                 color: #fff;
+                 font-size: 1.2em;
+                 text-decoration: none;
              }
              .col-xs-1 {
                  padding: 0;
