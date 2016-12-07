@@ -2,8 +2,15 @@
       border: 1px solid #ddd;
       border-radius: 20px;
       overflow: hidden;
+      border-collapse: separate;
+      border-spacing: 0;
   }
-
+  
+  .table-bordered>thead>tr>td,
+  .table-bordered>thead>tr>th {
+      border-width: 1px !important;
+  }
+  
   .for_collapse {
       padding: 0 0px;
       width: 100%;
@@ -16,6 +23,14 @@
                       &:first-child {
                           background: #83CFF4;
                       }
+                      &:last-child {
+                          border-right: none;
+                      }
+                  }
+              }
+              tr:last-child {
+                  td:last-child {
+                      border-right: none;
                   }
               }
               td {
@@ -23,13 +38,25 @@
                   text-align: center;
                   vertical-align: middle;
                   border-color: $mainblue;
+                  border-left: none;
+                  border-top: none;
               }
           }
           tbody {
+              tr:first-child {
+                  td {
+                      border-top: none;
+                  }
+              }
               td {
                   font-size: 1.35em;
+                  border-bottom: none;
+                  border-left: none;
                   &:first-child {
                       width: 47%;
+                  }
+                  &:last-child {
+                      border-right: none;
                   }
               }
           }
