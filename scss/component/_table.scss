@@ -202,8 +202,15 @@ a.read_more {
     }
 }
 
-.tablelist {
+#collapse3 .tablelist {
     display: block;
+    @media #{$md} {
+        display: none;
+    }
+}
+
+.tablelist {
+    display: table;
     @media #{$md} {
         display: none;
     }
@@ -244,7 +251,7 @@ td.title:focus::after {
 .swipe.cl_3 table tbody tr td:first-child {
     width: 15%;
     text-align: center;
-    img{
+    img {
         max-width: 20px;
         margin: auto;
     }
