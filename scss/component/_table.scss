@@ -1,0 +1,251 @@
+@mixin border_dot($direction) {
+    background-image: linear-gradient(to right, #ddd 40%, rgba(255, 255, 255, 0) 20%);
+    background-position: $direction;
+    background-size: 3px 1px;
+    background-repeat: repeat-x;
+}
+
+@mixin blue_gradient($flow) {
+    @if $flow=='h' {
+        background: rgba(65, 193, 240, 1);
+        background: linear-gradient(to right, rgba(65, 193, 240, 1) 0%, rgba(128, 220, 238, 1) 100%);
+    }
+    @else {
+        background: rgba(128, 219, 238, 1);
+        background: linear-gradient(to bottom, rgba(128, 219, 238, 1) 0%, rgba(65, 193, 240, 1) 100%);
+    }
+}
+
+.swipe {
+    background: #fff;
+    margin-top: 20px;
+    table {
+        td {
+            border-style: dotted;
+            border-width: 1px;
+            border-color: $gray_secondary;
+            vertical-align: middle;
+            line-height: 20px;
+            font-size: 1em;
+        }
+        thead {
+            tr {
+                td {
+                    font-family: 'kanda_b';
+                    border: none;
+                    border-bottom: 1px solid $gray_secondary;
+                    padding: 20px 8px 15px !important;
+                }
+            }
+        }
+        tbody {
+            font-family: 'kanda';
+            font-size: 1.2em;
+            color: $darkgray;
+            letter-spacing: 0px;
+            padding: 15px;
+            margin-top: 25px;
+            //  @media #{$lg}{
+            //     letter-spacing: 1px;
+            // }
+            &:before {
+                content: '';
+                display: block;
+                height: 20px;
+            }
+            tr {
+                td {
+                    font-family: 'kanda_b';
+                    border-top: 1px dotted #ddd !important;
+                    line-height: 20px !important;
+                    &:first-child {
+                        width: 75%;
+                        border-left: none;
+                        text-align: left;
+                        // @media #{$md} {
+                        //     width: 35%;
+                        //     min-width: 200px;
+                        // }
+                    }
+                    &:not(:first-child) {
+                        border-left: 1px solid $gray_secondary;
+                        //padding: 15px 8px;
+                        text-align: left;
+                        border-style: dotted;
+                        border-width: 1px;
+                        border-color: $gray_secondary;
+                        border-right: none;
+                        vertical-align: top;
+                    }
+                }
+                &:first-child {
+                    td {
+                        border-top: none !important;
+                    }
+                }
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.plan_block.swipe {
+    display: none;
+    position: relative;
+    @media #{$md} {
+        display: block;
+    }
+    .plan-header {
+        display: none;
+        position: relative;
+        height: 9em;
+        //display: table;
+        width: 100%;
+        @include blue_gradient('v');
+        .plan-header_text {
+            display: table-cell;
+            vertical-align: middle;
+            padding-left: 20%;
+        }
+    }
+    .stickyHeader {
+        position: relative;
+        transition: all .5 ease;
+        .plan-header {
+            display: table;
+        }
+        &.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 92%;
+            right: 0;
+            margin: 0 auto;
+            z-index: 9;
+            @media screen and (min-width: 500px) {
+                width: 95%;
+            }
+        }
+    }
+}
+
+.plan-table {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    &.spacetop {
+        margin-top: 36%;
+    }
+}
+
+a.read_more {
+    font-size: 1.3em;
+    text-decoration: underline;
+    color: $darkgray;
+    // @media #{$md} {
+    //     font-size: .9em;
+    //     text-align: left;
+    // }
+}
+
+.highlightTag {
+    position: absolute;
+    top: 0;
+    right: 17%;
+    background: url("../images/tag.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 16px;
+    height: 45px;
+}
+
+.plan-header_text {
+    p {
+        font-family: kanda_b;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 2.2em;
+        line-height: .7em;
+        width: 55%;
+        margin-bottom: 0;
+        white-space: nowrap;
+        // @media #{$md} {
+        //     font-size: 1.5em;
+        //     width: auto;
+        //     color: $darkgray;
+        //     white-space: normal;
+        // }
+        // @media #{$lg} {
+        //     font-size: 1.35em;
+        //     width: auto;
+        //     color: $darkgray;
+        //     white-space: normal;
+        // }
+        span {
+            font-family: 'kanda_b';
+            font-size: 1.5em;
+            border-top: 1px solid #fff;
+            line-height: 1em;
+            display: block;
+            max-width: 150px;
+            // @media #{$md} {
+            //     display: inline;
+            //     color: $darkgray;
+            //     border-top: none;
+            // }
+        }
+    }
+}
+
+.tablelist {
+    display: block;
+    @media #{$md} {
+        display: none;
+    }
+}
+
+// table row hover
+table {
+    overflow: hidden;
+}
+
+td,
+th {
+    padding: 10px;
+    position: relative;
+    outline: 0;
+    &.hover {
+        color: #fff;
+    }
+}
+
+td:hover::after,
+td.blueHover::after {
+    @include blue_gradient('v');
+}
+
+td:focus::after {
+    @include blue_gradient('v');
+}
+
+td.title:hover::after {
+    background: transparent;
+}
+
+td.title:focus::after {
+    background: transparent;
+}
+
+.swipe.cl_3 table tbody tr td:first-child {
+    width: 15%;
+    text-align: center;
+    img{
+        max-width: 20px;
+        margin: auto;
+    }
+}

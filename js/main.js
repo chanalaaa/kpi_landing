@@ -1,17 +1,52 @@
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        navContainer: '#customNav',
-        mouseDrag: false,
-        touchDrag: false,
-        //animateOut: 'fadeOut',
-        //smartSpeed:150,
-        responsive: {
-            0: {
-                items: 1
-            }
-        }
-    })
-
+    $('a[data-target="#collapse1"]').click(function() {
+        setTimeout(function() {
+            $('#collapse1 .owl-carousel').owlCarousel({
+                navContainer: '#customNav',
+                mouseDrag: false,
+                touchDrag: false,
+                //animateOut: 'fadeOut',
+                //smartSpeed:150,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+        }, 10)
+    });
+    $('a[data-target="#collapse2"]').click(function() {
+        setTimeout(function() {
+            $('#collapse2 .owl-carousel').owlCarousel({
+                navContainer: '#customNav',
+                mouseDrag: false,
+                touchDrag: false,
+                //animateOut: 'fadeOut',
+                //smartSpeed:150,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+        }, 10)
+    });
+    $('a[data-target="#collapse3"]').click(function() {
+        setTimeout(function() {
+            $('#collapse3 .owl-carousel').owlCarousel({
+                navContainer: '#customNav',
+                mouseDrag: false,
+                touchDrag: false,
+                //animateOut: 'fadeOut',
+                //smartSpeed:150,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+        }, 10)
+    });
 
     $(".owl-carousel").each(function() {
         var $this = $(this);
@@ -23,7 +58,12 @@ $(document).ready(function() {
             $this.trigger('prev.owl.carousel');
         });
     });
-    
+
+    // var collapse_width = $(".for_collapse .col-centered").width();
+    // console.log(collapse_width);
+    // $(".cl-sec2 .owl-stage").css('width', collapse_width * 2);
+    // $(".cl-sec2 .owl-item").css('width', collapse_width);
+
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return;
     } else {
