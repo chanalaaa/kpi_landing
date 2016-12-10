@@ -6,14 +6,15 @@
 }
 
 @mixin blue_gradient($flow) {
-    @if $flow=='h' {
-        background: rgba(65, 193, 240, 1);
-        background: linear-gradient(to right, rgba(65, 193, 240, 1) 0%, rgba(128, 220, 238, 1) 100%);
-    }
-    @else {
-        background: rgba(128, 219, 238, 1);
-        background: linear-gradient(to bottom, rgba(128, 219, 238, 1) 0%, rgba(65, 193, 240, 1) 100%);
-    }
+    background: $mainblue;
+    // @if $flow=='h' {
+    //     background: rgba(65, 193, 240, 1);
+    //     background: linear-gradient(to right, rgba(65, 193, 240, 1) 0%, rgba(128, 220, 238, 1) 100%);
+    // }
+    // @else {
+    //     background: rgba(128, 219, 238, 1);
+    //     background: linear-gradient(to bottom, rgba(128, 219, 238, 1) 0%, rgba(65, 193, 240, 1) 100%);
+    // }
 }
 
 .swipe {
@@ -214,6 +215,15 @@ a.read_more {
     @media #{$md} {
         display: none;
     }
+    .highlightTag {
+        position: absolute;
+        top: -2px;
+        right: 3%;
+        background: url(../images/tag.png) center no-repeat;
+        background-size: 100% 100%;
+        width: 12px;
+        height: 32px;
+    }
 }
 
 // table row hover
@@ -254,5 +264,16 @@ td.title:focus::after {
     img {
         max-width: 20px;
         margin: auto;
+    }
+}
+
+.swipe.cl_3 .plan-header_text {
+    p {
+        font-size: 1.8em;
+        span {
+            font-size: .8em;
+            line-height: .8em;
+            margin-top: 5px;
+        }
     }
 }

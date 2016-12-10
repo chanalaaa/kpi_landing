@@ -40,6 +40,18 @@ body {
     margin: 0 auto;
 }
 
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 100%;
+    }
+}
+
 .row-centered {
     text-align: center;
 }
@@ -73,7 +85,8 @@ p {
     }
 }
 
-.-no_padding{
+.-no_padding {
     padding: 0 !important;
 }
+
 #wrapper {}

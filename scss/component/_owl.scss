@@ -1,6 +1,6 @@
     .owl-carousel {
         .owl-item {
-           // background: #fff;
+            // background: #fff;
         }
         .item {
             position: relative;
@@ -23,6 +23,9 @@
             top: 2.7em;
             font-size: 22px;
             color: #fff;
+            @media #{$sm} {
+                top: 2.4em;
+            }
         }
         .next {
             @extend .prev;
@@ -96,7 +99,7 @@
             }
         }
     }
-
-    .owl-carousel .owl-stage-outer{
+    
+    .owl-carousel .owl-stage-outer {
         width: 100%;
     }

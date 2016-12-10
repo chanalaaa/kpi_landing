@@ -1,6 +1,6 @@
   .table-bordered {
       border: 1px solid #ddd;
-      border-radius: 20px;
+      //border-radius: 20px;
       overflow: hidden;
       border-collapse: separate;
       border-spacing: 0;
@@ -18,10 +18,11 @@
       table {
           margin-bottom: 30px;
           thead {
+              color: #fff;
               tr:first-child {
                   td {
                       &:first-child {
-                          background: #83CFF4;
+                          background: $mainblue;
                       }
                       &:last-child {
                           border-right: none;
@@ -34,12 +35,15 @@
                   }
               }
               td {
+                  line-height: 15px;
                   font-size: 1.5em;
                   text-align: center;
                   vertical-align: middle;
-                  border-color: $mainblue;
+                  background: $mainblue;
+                  border-top: 1px solid $mainblue;
                   border-left: none;
-                  border-top: none;
+                  border-right: none;
+                  color: #fff;
               }
           }
           tbody {
@@ -150,6 +154,9 @@
           background: #fff;
       }
       .side_in_tab .tab-content {
+          thead p {
+              color: #fff;
+          }
           @media #{$md} {
               padding: 0px;
           }
