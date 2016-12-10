@@ -1,9 +1,7 @@
 @font-face {
     font-family: 'kanda';
-    src: url('../fonts/PSL-Kanda.eot');
-    src: url('../fonts/PSL-Kanda.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PSL-Kanda.woff') format('woff'),
-        url('../fonts/PSL-Kanda.ttf') format('truetype');
+    src: url('../fonts/PSL-Kanda-Bold.eot');
+    src: url('../fonts/PSL-Kanda-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PSL-Kanda-Bold.woff') format('woff'), url('../fonts/PSL-Kanda-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -11,9 +9,7 @@
 @font-face {
     font-family: 'kanda_b';
     src: url('../fonts/PSL-Kanda-Bold.eot');
-    src: url('../fonts/PSL-Kanda-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PSL-Kanda-Bold.woff') format('woff'),
-        url('../fonts/PSL-Kanda-Bold.ttf') format('truetype');
+    src: url('../fonts/PSL-Kanda-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PSL-Kanda-Bold.woff') format('woff'), url('../fonts/PSL-Kanda-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -21,9 +17,7 @@
 @font-face {
     font-family: 'omnes';
     src: url('../fonts/.eot');
-    src: url('../fonts/Omnes-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Omnes-Regular.woff') format('woff'),
-        url('../fonts/Omnes-Regular.ttf') format('truetype');
+    src: url('../fonts/Omnes-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Omnes-Regular.woff') format('woff'), url('../fonts/Omnes-Regular.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }

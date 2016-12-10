@@ -1,5 +1,29 @@
 $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        navContainer: '#customNav',
+        mouseDrag: false,
+        touchDrag: false,
+        //animateOut: 'fadeOut',
+        //smartSpeed:150,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
 
+
+    $(".owl-carousel").each(function() {
+        var $this = $(this);
+        // Custom Navigation Events
+        $this.parent().find(".next").click(function() {
+            $this.trigger('next.owl.carousel');
+        });
+        $this.parent().find(".prev").click(function() {
+            $this.trigger('prev.owl.carousel');
+        });
+    });
+    
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return;
     } else {
@@ -30,6 +54,7 @@ $(document).ready(function() {
         $('#card_two').addClass('slideUp');
         $('#card_three').addClass('slideDown');
     }, 800);
+
 
 
 });
