@@ -118,6 +118,9 @@
          .icon-bar {
              background-color: $darkblue;
          }
+         @media (max-width: 500px) {
+            margin-top: 0;
+         }
      }
  }
  /* Bootstrap navbar collapse media-query */

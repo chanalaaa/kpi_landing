@@ -106,14 +106,15 @@
               //border-left: none;
           }
           &.active {
-              a {
+              a .tab_head {
                   color: $mainblue;
               }
           }
       }
       .tab_head {
+          font-family: kanda_exb;
           text-align: center;
-          padding: 15px 0;
+          padding: 6px 0;
       }
       table {
           margin-bottom: 100px;
@@ -127,7 +128,7 @@
                   text-align: center;
                   vertical-align: middle;
                   p {
-                      font-size: 1.1em;
+                      font-size: 1.4em;
                       &.text-med {
                           font-family: kanda_b
                       }

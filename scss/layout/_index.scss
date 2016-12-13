@@ -39,7 +39,7 @@
                  background-image: url("../images/bg2.jpg");
              }
              min-height: 400px;
-             padding: 7% 0 11%;
+             padding: 7% 0 8%;
          }
          &#sec5 {
              .bg {
@@ -93,12 +93,23 @@
              text-align: center;
          }
          .title {
-             margin: .2em 0;
+             margin: .1em 0;
+             font-size: 3.2em;
+             @media #{$md} {
+                 margin: 1em 0 .2em;
+                 font-size: 2.7em;
+             }
+             @media #{$sm} {
+                 font-size: 2.5em;
+             }
          }
          .desc {
              color: #fff;
-             font-size: 1.7em;
+             font-size: 1.9em;
              font-family: kanda_b;
+             @media #{$sm} {
+                 font-size: 1.6em;
+             }
          }
      }
      
@@ -131,12 +142,14 @@
      
      .card_item {
          position: relative;
-         background: rgba(225, 225, 225, .9);
+         background: rgba(255, 255, 255, .9);
          padding: 15px;
          text-align: center;
          min-height: 240px;
-         border-radius: 7px;
+         border-bottom-right-radius: 7px;
+         border-bottom-left-radius: 7px;
          opacity: 0;
+         max-width: 270px;
          .card-ico {
              width: 100px;
              height: 100px;
@@ -176,8 +189,13 @@
          padding: 10px 20px;
          white-space: nowrap;
          text-decoration: none !important;
-         &:hover {
-             text-decoration: none;
+
+         &.center {
+            
+               right: 0 !important;
+             margin: auto;
+             left: 0;
+             max-width: 150px;
          }
          img {
              width: 13px;
@@ -395,7 +413,7 @@
          background-repeat: no-repeat;
          background-position: left;
          p {
-             font-family: kanda_b;
+             font-family: kanda_exb;
              margin-left: 4rem;
              line-height: 1em;
          }
@@ -414,7 +432,7 @@
          margin-top: 15px;
          position: relative;
          .tab_head {
-             font-family: kanda;
+             font-family: kanda_b;
              color: #6D6E71;
              width: 80%;
              text-align: left;
@@ -447,7 +465,7 @@
                      padding: 10px 15px;
                  }
                  .tab_head {
-                     font-family: kanda_b;
+                     font-family: kanda_exb;
                  }
              }
              a {
@@ -482,8 +500,9 @@
      
      .showmore {
          margin-top: 2rem;
+         margin-bottom: 1em;
          a {
-             font-family: 'kanda_b';
+             font-family: 'kanda_exb';
              color: $darkgray;
              text-decoration: none;
              &:hover {
@@ -510,7 +529,7 @@
      .detail_block {}
      
      .title {
-         font-family: 'kanda_b';
+         font-family: 'kanda_exb';
          font-size: 3em;
          margin: 20px 0;
      }
@@ -522,7 +541,7 @@
              min-width: 30px;
          }
          p {
-             font-family: kanda_b;
+             font-family: kanda_exb;
          }
      }
      

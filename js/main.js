@@ -59,6 +59,11 @@ $(document).ready(function() {
         });
     });
 
+    setTimeout(function() {
+        $('#card_one').addClass('slideDown');
+        $('#card_two').addClass('slideUp');
+        $('#card_three').addClass('slideDown');
+    }, 800);
     // var collapse_width = $(".for_collapse .col-centered").width();
     // console.log(collapse_width);
     // $(".cl-sec2 .owl-stage").css('width', collapse_width * 2);
@@ -75,7 +80,7 @@ $(document).ready(function() {
             .addTo(controller);
 
         new ScrollMagic.Scene({ triggerElement: "#sec3" })
-            .setTween("#bg3", { y: "27%", ease: Linear.easeNone })
+            .setTween("#bg3", { y: "30%", ease: Linear.easeNone })
             .addTo(controller2);
 
         new ScrollMagic.Scene({ triggerElement: "#sec5" })
@@ -89,11 +94,6 @@ $(document).ready(function() {
     });
 
 
-    setTimeout(function() {
-        $('#card_one').addClass('slideDown');
-        $('#card_two').addClass('slideUp');
-        $('#card_three').addClass('slideDown');
-    }, 800);
 
 
 
