@@ -24,6 +24,18 @@
 }
 
 @font-face {
+    font-family: 'kanda_exb';
+    src: url('../fonts/psl156pro-webfont.eot');
+    src: url('../fonts/psl156pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/psl156pro-webfont.woff2') format('woff2'),
+         url('../fonts/psl156pro-webfont.woff') format('woff'),
+         url('../fonts/psl156pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'omnes';
     src: url('../fonts/.eot');
     src: url('../fonts/Omnes-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Omnes-Regular.woff') format('woff'), url('../fonts/Omnes-Regular.ttf') format('truetype');
