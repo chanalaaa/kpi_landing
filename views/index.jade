@@ -711,8 +711,14 @@ block body
 		.row.for_collapse
 			.col-sm-12.col-md-10.col-centered
 				#collapse3.collapse.fromsec3
+					.showmore.dismiss.hide-des(style="padding:15px 15px 0;")
+						a(href="#" onclick="event.preventDefault();" data-toggle="collapse" data-target="#collapse3" ) 
+							img(src="./images/ico/arrow_expand.png")
+							| ซ่อนตาราง
+						<br>
+
 					.row
-						.col-sm-10.col-centered
+						.col-sm-10.col-centered(style="margin-top: 57px;")
 							.plan_block.swipe.cl_3
 								.stickyHeader
 									#customNav.customNavigation
