@@ -13,6 +13,9 @@ block jsFirst
 block body
 	.wrapper
 		include ./layout/_header
+		#scrollToTop
+			a(href="#")
+				img(src="./images/ico/arrow_expand.png")
 		section#sec1.parallax
 			.bg#bg1
 			.content_block
@@ -53,11 +56,11 @@ block body
 			.float_block
 				.row.flex
 					.col-sm-12.col-md-6.side-left.hide-sm
-						.img-content(style="background-image: url('http://placehold.it/1200x600')")
+						.img-content(style="background-image: url('./images/side1.jpg')")
 					.col-sm-12.col-md-6.side-right
 						.side_content_block
 							.img-content_block.hide-des
-								.img-content(style="background-image: url('http://placehold.it/1200x600')")
+								.img-content(style="background-image: url('./images/side1.jpg')")
 							.for_shadow
 								.side_in_head-title
 									p ประกันภัย<br>การเดินทาง
@@ -141,32 +144,32 @@ block body
 												.plan-header_text
 													p
 														| วีซ่าพลัส
-														span 641 บาท
+														
 										.item
 											.plan-header
 												.plan-header_text
 													p
 														| วีซ่า
-														span 432 บาท
+														
 										.item
 											.plan-header
 												.plan-header_text
 													p
 														| วีซ่าอีลีท
-														span 915 บาท
+														
 										.item
 											.plan-header
 												.plan-header_text
 													p
 														| วีซ่าคอมพรีเฮนซีพ
-														span 1,423 บาท
+														
 								.owl-carousel
 									.item
 										.plan-header
 											.plan-header_text
 												p
 													| วีซ่า
-													span 432 บาท
+													
 										.plan-table
 											table.table
 												tbody
@@ -232,7 +235,7 @@ block body
 											.plan-header_text
 												p
 													| วีซ่าพลัส
-													span 641 บาท
+													
 										.plan-table
 											table.table
 												tbody
@@ -297,7 +300,7 @@ block body
 											.plan-header_text
 												p
 													| วีซ่าอีลีท
-													span 915 บาท
+													
 										.plan-table
 											table.table
 												tbody
@@ -362,7 +365,7 @@ block body
 											.plan-header_text
 												p
 													| วีซ่าคอมพรีเฮนซีพ
-													span 1,423 บาท
+													
 										.plan-table
 											table.table
 												tbody
@@ -427,7 +430,7 @@ block body
 							table.table.table-bordered.tablelist
 								thead
 									tr
-										td(rowspan='2') ความคุ้มครอง
+										td(rowspan='2',style="font-size: 1.8em;") ความคุ้มครอง
 										td(colspan='4',style="background:#19c5f3;font-size: 1.8em;padding: 10px;")
 											div ผลประโยชน์ชดเชย (บาท)
 									tr(style="background:#19c5f3;")
@@ -563,20 +566,20 @@ block body
 														.plan-header_text
 															p
 																| Domestic Eco
-																span 641 บาท
+																
 												.item
 													.plan-header
 														.plan-header_text
 															p
 																| Domestic Care
-																span 432 บาท
+																
 										.owl-carousel
 											.item
 												.plan-header
 													.plan-header_text
 														p
 															| Domestic Eco
-															span 83 บาท
+															
 												.plan-table
 													table.table
 														tbody
@@ -606,7 +609,7 @@ block body
 													.plan-header_text
 														p
 															| Domestic Care
-															span 164 บาท
+															
 												.plan-table
 													table.table
 														tbody
@@ -633,7 +636,7 @@ block body
 							table.table.table-bordered.tablelist
 								thead
 									tr
-										td(rowspan='2') ความคุ้มครอง
+										td(rowspan='2',style="font-size: 1.8em;") ความคุ้มครอง
 										td(colspan='4',style="background:#19c5f3;font-size: 1.8em;padding: 10px;")
 											div ผลประโยชน์ชดเชย (บาท)
 									tr(style="background:#19c5f3;")
@@ -667,8 +670,15 @@ block body
 										td 500,000
 										td 1,000,000
 
-							p.
-										* ประกันการเดินทางต่างประเทศ ไม่คุ้มครองผู้ที่เดินทางไป หรือเดินทางผ่าน หรือเดินทางในประเทศ ซีเรีย, ปากีสถาน, อิรัก, ซูดาน, อัฟกานิสถาน, บูรูนดิ, อิริเทีย, เกาหลีเหนือ, เลบานอน, ลิเบีย, อัลจีเรีย, ไฮติ, อิสราเอล และอิหร่าน
+							p(style="font-size:22px;").
+								ประกันการเดินทางต่างประเทศ
+							ul
+								li คุ้มครองผู้เอาประกันภัย อายุตั้งแต่ 7วัน - 75 ปี
+								li ผู้เอาประกันภัยมีอายุได้ถึง 85 ปี
+								li ซื้อประกันภัยได้สูงสุด 10ท่าน / 1 ครั้งการทำรายการ
+								li ซื้อล่วงหน้า 2 ชั่วโมงก่อนออกเดินทาง
+								li เปลี่ยนแปลงวันเดินทางได้ก่อนถึงวันเดินทาง
+
 	
 		section#sec3.parallax
 			.bg#bg3
@@ -696,7 +706,7 @@ block body
 								img(src="./images/ico/arrow_right.png")
 						
 					.col-sm-6.side-right
-						.img-content(style="background-image: url('http://placehold.it/1200x600')")
+						.img-content(style="background-image: url('./images/side2.jpg')")
 
 		.row.for_collapse
 			.col-sm-12.col-md-10.col-centered
@@ -737,7 +747,7 @@ block body
 										.item
 											.plan-header
 												.plan-header_text
-													p
+													p(style="text-align: center;")
 														| พ.ร.บ.
 														
 
@@ -1016,7 +1026,7 @@ block body
 										p.contect 0 2624 1111 
 											span ต่อ 
 											| 4774
-										p จันทร์-ศุกร์ เวลา 8.30-16.30 น.
+										p จันทร์ - ศุกร์ เวลา 8.30-16.30 น.
 							.col-sm-6.sec7_item
 								.row(style="display:inline-block;")
 									.col-xs-1
@@ -1028,7 +1038,7 @@ block body
 										p.contect 0 2624 1111 
 											span ต่อ 
 											| 4932
-										p จันทร์-ศุกร์ เวลา 8.30-16.30 น.
+										p จันทร์ - ศุกร์ เวลา 8.30-16.30 น.
 							//- .col-sm-4.sec7_item
 							//-   .col-xs-2
 							//-     img(src="http://placehold.it/300x300")

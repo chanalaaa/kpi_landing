@@ -92,8 +92,20 @@ $(document).ready(function() {
     $('a[data-toggleTab="sec2"]').click(function() {
         $('.collapse.in').collapse('hide');
     });
+    $('#scrollToTop').hide();
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#scrollToTop').fadeIn(300);
+        } else {
+            $('#scrollToTop').fadeOut(300);
+        }
+    });
 
-
+    //Click event to scroll to top
+    $('#scrollToTop').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 200);
+        return false;
+    });
 
 
 

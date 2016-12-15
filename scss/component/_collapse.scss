@@ -163,3 +163,24 @@
           }
       }
   }
+  
+  #collapse2 {
+      ul {
+          padding-left: 20px;
+          text-indent: 2px;
+          list-style: none;
+          list-style-position: outside;
+      }
+      li {
+          font-size: 18px;
+          line-height: 1em;
+          color: #3c414b;
+      }
+      li:before {
+          content: '✔';
+          margin-left: -1em;
+          margin-right: .100em;
+          margin-right: .7em;
+          font-size: 15px;
+      }
+  }
