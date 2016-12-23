@@ -36,7 +36,7 @@
               }
               td {
                   line-height: 15px;
-                  font-size: 1.5em;
+                  font-size: 1.8em;
                   text-align: center;
                   vertical-align: middle;
                   background: $mainblue;
@@ -53,7 +53,7 @@
                   }
               }
               td {
-                  font-size: 1.35em;
+                  font-size: 1.6em;
                   border-bottom: none;
                   border-left: none;
                   &:first-child {
@@ -137,7 +137,7 @@
           }
           tbody {
               td {
-                  font-size: 1.35em;
+                  font-size: 1.7em;
                   padding-left: 7%;
                   &:first-child {
                       text-align: center;
@@ -183,4 +183,8 @@
           margin-right: .7em;
           font-size: 15px;
       }
+  }
+
+  .for_collapse .swipe table tbody td{
+    font-size: 1.4em;
   }

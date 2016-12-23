@@ -210,6 +210,11 @@ a.read_more {
     }
 }
 
+.collapse {
+    max-width: 1366px;
+    margin: auto;
+}
+
 .tablelist {
     display: table;
     @media #{$md} {
@@ -276,4 +281,9 @@ td.title:focus::after {
             margin-top: 5px;
         }
     }
+}
+
+span.space{
+    width: 10px;
+    height: 1px;
 }
