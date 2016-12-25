@@ -68,20 +68,24 @@
  //     display: inline;
  //     float: none;
  // }
+  .navbar-brand_block{
+    white-space: nowrap;
+    a{
+        display: inline;
+    }
+  }
  .navbar-brand {
-     width: 300px;
+     width: 150px;
      float: left;
      height: auto;
      padding: 7px 0px 0 25px;
      font-size: 18px;
      line-height: 20px;
      @media #{$md} {
-         width: 300px;
          padding: 5px 0px 0 30px;
      }
      @media #{$lg} {
-         padding: 2px 0px 0 25px;
-         width: 260px;
+         padding: 7px 0px 0 25px;
      }
      img {
          width: 95%;
@@ -120,7 +124,7 @@
              background-color: $darkblue;
          }
          @media (max-width: 500px) {
-            margin-top: 0;
+            // margin-top: 0;
          }
      }
  }
