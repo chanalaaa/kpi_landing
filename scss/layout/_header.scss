@@ -1,13 +1,16 @@
  // Header //////////////////////////////////
  .navbar {
      padding: 5px 0;
-     border-radius: 0 !important;
+     border-radius: 0!important;
      margin-bottom: 0;
      position: absolute;
      top: 0;
      left: 0;
+     right: 0;
      z-index: 99999;
      width: 100%;
+     max-width: 1366px;
+     margin: auto;
      a {
          font-family: 'kanda_b';
          font-size: 1.5em;
@@ -68,14 +71,16 @@
  //     display: inline;
  //     float: none;
  // }
-  .navbar-brand_block{
-    white-space: nowrap;
-    a{
-        display: inline;
-    }
-  }
+ .navbar-brand_block {
+     white-space: nowrap;
+     display: inline-block;
+     a {
+         display: inline;
+     }
+ }
+ 
  .navbar-brand {
-     width: 150px;
+     width: 130px;
      float: left;
      height: auto;
      padding: 7px 0px 0 25px;
@@ -85,11 +90,15 @@
          padding: 5px 0px 0 30px;
      }
      @media #{$lg} {
-         padding: 7px 0px 0 25px;
+         padding: 7px 0px 0 10px;
      }
      img {
          width: 95%;
      }
+ }
+ 
+ .navbar-collapse {
+     width: 100%;
  }
  
  .navbar-default .navbar-nav>li>a {
@@ -124,7 +133,7 @@
              background-color: $darkblue;
          }
          @media (max-width: 500px) {
-            // margin-top: 0;
+             // margin-top: 0;
          }
      }
  }
@@ -145,6 +154,7 @@
          border-top: 1px solid transparent;
          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
          background-color: #fff;
+         width: inherit !important;
      }
      .navbar-fixed-top {
          top: 0;
