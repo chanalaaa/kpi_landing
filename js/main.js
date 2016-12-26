@@ -13,7 +13,7 @@ $(document).ready(function() {
                     }
                 }
             })
-        }, 10)
+        }, 50)
     });
     $('a[data-target="#collapse2"]').click(function() {
         setTimeout(function() {
@@ -29,11 +29,11 @@ $(document).ready(function() {
                     }
                 }
             })
-        }, 10)
+        }, 50)
     });
-    $('a[data-target="#collapse3"]').click(function() {
+    $('a[data-target="#triggercolp3_mobile"]').click(function() {
         setTimeout(function() {
-            $('#collapse3 .owl-carousel').owlCarousel({
+            $('#triggercolp3_mobile .owl-carousel').owlCarousel({
                 navContainer: '#customNav',
                 mouseDrag: false,
                 touchDrag: false,
@@ -45,7 +45,7 @@ $(document).ready(function() {
                     }
                 }
             })
-        }, 10)
+        }, 50)
     });
 
     $(".owl-carousel").each(function() {

@@ -63,18 +63,19 @@
                         width: 75%;
                         border-left: none;
                         text-align: left;
+                        border-right: 1px dotted #ddd !important;
                         // @media #{$md} {
                         //     width: 35%;
                         //     min-width: 200px;
                         // }
                     }
                     &:not(:first-child) {
-                        border-left: 1px solid $gray_secondary;
+                        border-left: 1px solid #ddd;
                         //padding: 15px 8px;
                         text-align: left;
                         border-style: dotted;
                         border-width: 1px;
-                        border-color: $gray_secondary;
+                        border-color: #ddd;
                         border-right: none;
                         vertical-align: top;
                     }
@@ -203,7 +204,7 @@ a.read_more {
     }
 }
 
-#collapse3 .tablelist {
+.collapse3 .tablelist {
     display: block;
     @media #{$md} {
         display: none;

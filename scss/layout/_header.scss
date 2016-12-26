@@ -93,8 +93,18 @@
          padding: 7px 0px 0 10px;
      }
      img {
-         width: 95%;
+         width: 100%;
      }
+     &.second {
+         //margin-left: -5px !important;
+         padding: 4px 0;
+         @media #{$lg} {
+             padding: 7px 0px 0 0px;
+         }
+     }
+ }
+ .navbar>.container .navbar-brand{
+    margin-left: 0;
  }
  
  .navbar-collapse {

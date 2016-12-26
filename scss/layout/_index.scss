@@ -42,7 +42,13 @@
                  }
              }
              min-height: 400px;
-             padding: 7% 0 8%;
+             padding: 7% 0 0%;
+         }
+         &#sec4 {
+             margin-top: 8em;
+             @media #{$md} {
+                 margin-top: 0em;
+             }
          }
          &#sec5 {
              .bg {

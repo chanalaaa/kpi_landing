@@ -139,6 +139,7 @@
               td {
                   font-size: 1.7em;
                   padding-left: 7%;
+                  padding: 7px !important;
                   &:first-child {
                       text-align: center;
                       width: 15%;
@@ -164,13 +165,11 @@
       }
   }
   
-  #collapse2 {
-      ul {
-          padding-left: 20px;
-          text-indent: 2px;
-          list-style: none;
-          list-style-position: outside;
-      }
+  .colp2_list {
+      padding-left: 20px;
+      text-indent: 2px;
+      list-style: none;
+      list-style-position: outside;
       li {
           font-size: 18px;
           line-height: 1em;
@@ -184,7 +183,25 @@
           font-size: 15px;
       }
   }
-
-  .for_collapse .swipe table tbody td{
-    font-size: 1.4em;
+  
+  .for_collapse .swipe table tbody td {
+      font-size: 1.4em;
+  }
+  
+  .formsec3 .swipe table tbody tr td {
+      padding: 7px !important;
+  }
+  
+  .show_desk {
+      display: block;
+      @media #{$md} {
+          display: none;
+      }
+  }
+  
+  .show_mobile {
+      display: none;
+      @media #{$md} {
+          display: block;
+      }
   }
