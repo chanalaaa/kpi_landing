@@ -267,7 +267,7 @@ td.title:focus::after {
 
 .swipe.cl_3 table tbody tr td:first-child {
     width: 15%;
-    text-align: center;
+    text-align: left;
     img {
         max-width: 20px;
         margin: auto;
@@ -285,7 +285,17 @@ td.title:focus::after {
     }
 }
 
-span.space{
+span.space {
     width: 10px;
     height: 1px;
+}
+
+.for_collapse .collapse3 table thead tr:first-child td:first-child {
+    text-align: left;
+    padding-left: 15px !important;
+}
+
+.for_collapse .collapse3 table tbody tr td {
+    text-align: left;
+    padding-left: 15px !important;
 }

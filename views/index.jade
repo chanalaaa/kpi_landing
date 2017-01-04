@@ -128,7 +128,7 @@ block body
 						.col-sm-11.col-centered
 							.row
 								.col-sm-12
-									p.title.row-centered(style="display: inline;float: left;") ประกันภัยการเดินทาง
+									p.title.row-centered(style="display: inline;float: left;font-size: 2.6em;") ประกันภัยการเดินทางต่างประเทศ
 									.showmore.dismiss(style="display: inline-block;margin-bottom: 0;margin: 28px 0 20px;")
 										a(href="#" onclick="event.preventDefault();" data-toggle="collapse" data-target="#collapse1" ) 
 											img(src="./images/ico/arrow_expand.png")
@@ -142,13 +142,13 @@ block body
 									.owl-carousel.disableDrag
 										.item
 											.plan-header
-												.highlightTag
 												.plan-header_text
 													p
 														| แผน วีซ่า
 														
 										.item
 											.plan-header
+												.highlightTag
 												.plan-header_text
 													p
 														| แผน วีซ่า พลัส
@@ -557,7 +557,7 @@ block body
 										td 1,500,000
 										td 1,500,000
 										td 2,000,000
-										td 2,500,000
+										td 2,000,000
 
 									tr
 										td.
@@ -621,7 +621,7 @@ block body
 								ประกันการเดินทาง ไอ-อินชัวร์
 							ul.colp2_list
 								li คุ้มครองผู้เอาประกันภัย อายุตั้งแต่ 7 วัน - 75 ปี
-								li ประกันการเดินทางต่างประเทศขยายอายุผู้เอาประกันภัยได้ถึง 85 ปี”
+								li ประกันการเดินทางต่างประเทศขยายอายุผู้เอาประกันภัยได้ถึง 85 ปี
 								li ซื้อประกันภัยได้สูงสุด 10 ท่าน / 1 ครั้งการทำรายการ
 								li ซื้อล่วงหน้า 2 ชั่วโมงก่อนออกเดินทาง
 								li เปลี่ยนแปลงวันเดินทางได้ก่อนถึงวันเดินทาง
@@ -631,7 +631,7 @@ block body
 						.col-sm-11.col-centered
 							.row
 								.col-sm-12
-									p.title.row-centered(style="display: inline;float: left;") ประกันภัยการเดินทาง
+									p.title.row-centered(style="display: inline;float: left;font-size: 2.6em;") ประกันภัยการเดินทางในประเทศ
 									.showmore.dismiss(style="display: inline-block;margin-bottom: 0;margin: 28px 0 20px;")
 										a(href="#" onclick="event.preventDefault();" data-toggle="collapse" data-target="#collapse2" ) 
 											img(src="./images/ico/arrow_expand.png")
@@ -645,16 +645,16 @@ block body
 											.owl-carousel.disableDrag
 												.item
 													.plan-header
-														.highlightTag
 														.plan-header_text
 															p
-																| Domestic Eco Plan
+																| Domestic Eco
 																
 												.item
 													.plan-header
+														.highlightTag
 														.plan-header_text
 															p
-																| Domestic Care Plan
+																| Domestic Care
 																
 										.owl-carousel
 											.item
@@ -689,7 +689,7 @@ block body
 													.highlightTag
 													.plan-header_text
 														p
-															| Domestic Care Plan
+															| Domestic Care
 															
 												.plan-table
 													table.table
@@ -719,9 +719,9 @@ block body
 										td(colspan='4',style="background:#19c5f3;font-size: 1.8em;padding: 10px;")
 											div ผลประโยชน์ชดเชย (บาท)
 									tr(style="background:#19c5f3;")
-										td Domestic Eco Plan
+										td Domestic Eco
 										td 
-											| Domestic Care Plan
+											| Domestic Care
 											.highlightTag
 										
 								tbody
@@ -803,13 +803,13 @@ block body
 															.owl-carousel.disableDrag
 																.item
 																	.plan-header
-																		.highlightTag
 																		.plan-header_text
 																			p
 																				| ประกันภัยรถยนต์<br>ประเภท 1
 																				span คุ้มครองความเสียหาย<br>ครอบคลุมมากที่สุด
 																.item
 																	.plan-header
+																		.highlightTag
 																		.plan-header_text
 																			p
 																				| ประกันภัยรถยนต์<br> ประเภท 2 พลัส
@@ -869,7 +869,7 @@ block body
 																			tr
 																				//- td
 																				//- 	img(src="./images/ico/check.png", alt="")
-																				td สูญหายและไฟไหม้ 
+																				td รถสูญหายและไฟไหม้ 
 																			tr
 																				//- td
 																				//- 	img(src="./images/ico/check.png", alt="")
@@ -928,7 +928,7 @@ block body
 																	//- button.btn.btn-primary.-center(type='submit', onclick="location.href='./step_3_in.html'") เลือก
 															.item
 																.plan-table
-																	p.
+																	p(style="text-align:left").
 																		ประกันภัยรถยนต์ภาคบังคับ (พ.ร.บ.) คุ้มครองผู้ประสบภัยจากอุบัติเหตุรถยนต์ ไม่ว่าจะเป็นผู้ขับขี่ 
 																		ผู้โดยสาร คนเดินเท้า หากได้รับความเสียหายแก่ชีวิต ร่างกาย อนามัย 
 																		รวมไปถึงทายาทของผู้ประสบภัย ในกรณีผู้ประสบภัยเสียชีวิต 
@@ -989,23 +989,33 @@ block body
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองความเสียหายต่อตัวรถยนต์ที่เกิดจากการชนหรือรถพลิกคว่ำ
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองความเสียหายต่อตัวรถยนต์ที่เกิดจากการชนหรือรถพลิกคว่ำ
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td ภัยธรรมชาติ รถสูญหายและไฟไหม้ 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| ภัยธรรมชาติ รถสูญหายและไฟไหม้ 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td เหมาะสำหรับรถยนต์จดทะเบียนใหม่และรถยนต์ที่มีอายุการใช้งานไม่เกิน 7 ปี
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| เหมาะสำหรับรถยนต์จดทะเบียนใหม่และรถยนต์ที่มีอายุการใช้งานไม่เกิน 7 ปี
 									#sec3menu2.tab-pane.fade.in
 										table.table.table-bordered
 											thead
@@ -1017,25 +1027,33 @@ block body
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองความเสียหายต่อรถยนต์ที่เกิดจากการชน (รถชนรถ) 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองความเสียหายต่อรถยนต์ที่เกิดจากการชน (รถชนรถ) 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td สูญหายและไฟไหม้ 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| รถสูญหายและไฟไหม้ 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td.
-														คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
+													td
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td.
-														ประกันภัยรถยนต์ประเภท 2 พลัส เพิ่มความคุ้มครองความเสียหายของตัวรถยนต์ที่เกิดจากการชน
+													td
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| ประกันภัยรถยนต์ประเภท 2 พลัส เพิ่มความคุ้มครองความเสียหายของตัวรถยนต์ที่เกิดจากการชน
 
 
 									#sec3menu3.tab-pane.fade.in
@@ -1049,11 +1067,15 @@ block body
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
 
 									#sec3menu4.tab-pane.fade.in
 										table.table.table-bordered
@@ -1066,22 +1088,27 @@ block body
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองความเสียหายต่อรถยนต์ที่เกิดจากการชน (รถชนรถ) 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองความเสียหายต่อรถยนต์ที่เกิดจากการชน (รถชนรถ) 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
+													td 
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองชีวิตร่างกายของผู้ขับขี่รวมถึงผู้โดยสาร 
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td.
-														คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
+													td
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| คุ้มครองทรัพย์สิน ชีวิตและร่างกายของคู่กรณีที่เป็นบุคคลภายนอก
 												tr
 													//- td
 													//- 	img(src="./images/ico/check.png", alt="")
-													td.
-														ประกันภัยรถยนต์ ประเภท 3 พลัส 
-														เพิ่มความคุ้มครองความเสียหายของตัวรถยนต์ที่เกิดจากการชน
+													td
+														img(src="./images/ico/check.png" style="margin-right: 10px;")
+														| ประกันภัยรถยนต์ ประเภท 3 พลัส เพิ่มความคุ้มครองความเสียหายของตัวรถยนต์ที่เกิดจากการชน
 									#sec3menu5.tab-pane.fade.in
 										table.table.table-bordered(style="margin-bottom: 20px;")
 											thead
@@ -1115,7 +1142,7 @@ block body
 							img(src="./images/ico/arrow_right.png")
 		.row.for_collapse
 			.col-sm-10.col-centered.cl-sec2
-				#collapse4.collapse.fromsec2(style="margin-top: 2em;")
+				#collapse4.collapse.fromsec2
 					.row
 						.col-sm-11.col-centered
 							.row
@@ -1178,41 +1205,41 @@ block body
 														td 10,000
 													tr
 														td.
-															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
-														td 50,000
+															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
+														td สูงสุด 50,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดโจรกรรม
 														td
 													tr
 														td.
-															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
-														td 50,000
+															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
+														td สูงสุด 50,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดความรับผิดต่อบุคคลภายนอก
 														td
 													tr
-														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง สูงสุด
+														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง
 														td(style="border-bottom-style: hidden;") 50,000
 
-													tr
-														td(colspan='2',style="padding:15px;")
-													tr
-														td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
-															เบี้ยประกันภัยรวมภาษี อากร (บาท)
-													tr
-														td เบี้ยประกันภัยสุทธิ
-														td 1,861.16 
-													tr
-														td อากร
-														td 8.00 
-													tr
-														td ภาษี
-														td 130.84 
-													tr
-														td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
-														td(style="font-family: kanda_exb") 2,000.00 
+													//- tr
+													//- 	td(colspan='2',style="padding:15px;")
+													//- tr
+													//- 	td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
+													//- 		เบี้ยประกันภัยรวมภาษี อากร (บาท)
+													//- tr
+													//- 	td เบี้ยประกันภัยสุทธิ
+													//- 	td 1,861.16 
+													//- tr
+													//- 	td อากร
+													//- 	td 8.00 
+													//- tr
+													//- 	td ภาษี
+													//- 	td 130.84 
+													//- tr
+													//- 	td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
+													//- 	td(style="font-family: kanda_exb") 2,000.00 
 									.item
 										.plan-header
 											.highlightTag
@@ -1241,41 +1268,41 @@ block body
 														td 15,000
 													tr
 														td.
-															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
-														td 100,000
+															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น  (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
+														td สูงสุด 100,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดโจรกรรม
 														td
 													tr
 														td.
-															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
-														td 100,000
+															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
+														td สูงสุด 100,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดความรับผิดต่อบุคคลภายนอก
 														td
 													tr
-														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง สูงสุด
+														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง
 														td(style="border-bottom-style: hidden;") 50,000
 
-													tr
-														td(colspan='2',style="padding:15px;")
-													tr
-														td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
-															เบี้ยประกันภัยรวมภาษี อากร (บาท)
-													tr
-														td เบี้ยประกันภัยสุทธิ
-														td 3,257.03 
-													tr
-														td อากร
-														td 14.00 
-													tr
-														td ภาษี
-														td 228.97 
-													tr
-														td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
-														td(style="font-family: kanda_exb") 3,500.00 
+													//- tr
+													//- 	td(colspan='2',style="padding:15px;")
+													//- tr
+													//- 	td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
+													//- 		เบี้ยประกันภัยรวมภาษี อากร (บาท)
+													//- tr
+													//- 	td เบี้ยประกันภัยสุทธิ
+													//- 	td 3,257.03 
+													//- tr
+													//- 	td อากร
+													//- 	td 14.00 
+													//- tr
+													//- 	td ภาษี
+													//- 	td 228.97 
+													//- tr
+													//- 	td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
+													//- 	td(style="font-family: kanda_exb") 3,500.00 
 													
 									.item
 										.plan-header
@@ -1304,41 +1331,41 @@ block body
 														td 20,000
 													tr
 														td.
-															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
-														td 150,000
+															4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
+														td สูงสุด 150,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดโจรกรรม
 														td
 													tr
 														td.
-															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
-														td 150,000
+															ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น  (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
+														td สูงสุด 150,000
 													tr
 														td(style="font-family: kanda_exb").
 															หมวดความรับผิดต่อบุคคลภายนอก
 														td
 													tr
-														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง สูงสุด
+														td ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง
 														td(style="border-bottom-style: hidden;") 50,000
 
-													tr
-														td(colspan='2',style="padding:15px;")
-													tr
-														td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
-															เบี้ยประกันภัยรวมภาษี อากร (บาท)
-													tr
-														td เบี้ยประกันภัยสุทธิ
-														td 4,653.90 
-													tr
-														td อากร
-														td 19.00 
-													tr
-														td ภาษี
-														td 327.10 
-													tr
-														td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
-														td(style="font-family: kanda_exb") 5,000.00 
+													//- tr
+													//- 	td(colspan='2',style="padding:15px;")
+													//- tr
+													//- 	td(colspan='2',style="font-family: kanda_exb;margin-top:1em;background:#19C5F3;color:#fff;    border-bottom-style: hidden;text-align:center").
+													//- 		เบี้ยประกันภัยรวมภาษี อากร (บาท)
+													//- tr
+													//- 	td เบี้ยประกันภัยสุทธิ
+													//- 	td 4,653.90 
+													//- tr
+													//- 	td อากร
+													//- 	td 19.00 
+													//- tr
+													//- 	td ภาษี
+													//- 	td 327.10 
+													//- tr
+													//- 	td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
+													//- 	td(style="font-family: kanda_exb") 5,000.00 
 
 
 
@@ -1384,10 +1411,10 @@ block body
 
 									tr
 										td.
-											4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
-										td 50,000 
-										td 100,000
-										td 150,000
+											4. ความสูญเสียหรือความเสียหายของเครื่องใช้ไฟฟ้า ไม่เกิน 20,000 บาทต่อชิ้น (ถือเป็นส่วนหนึ่งของจำนวนเงินเอาประกันภัยข้อ 1)
+										td สูงสุด 50,000 
+										td สูงสุด 100,000
+										td สูงสุด 150,000
 
 									tr
 										td(style="font-family: kanda_exb").
@@ -1398,10 +1425,10 @@ block body
 
 									tr
 										td.
-											ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น สูงสุด (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
-										td 50,000 
-										td 100,000
-										td 150,000 
+											ความสูญเสียหรือเสียหายของทรัพย์สินภายในที่อยู่อาศัยจากการลักทรัพย์ ที่ปรากฏร่องรอยชิงทรัพย์ ปล้นทรัพย์ (จร.2) ไม่เกิน 20,000 บาทต่อชิ้น (คุ้มครองรวมถึง อัญมณี เครื่องประดับ นาฬิกา โทรศัพท์มือถือ และคอมพิวเตอร์พกพา ภายในสถานที่เอาประกันภัย)   
+										td สูงสุด 50,000 
+										td สูงสุด 100,000
+										td สูงสุด 150,000 
 									tr
 										td(style="font-family: kanda_exb").
 											หมวดความรับผิดต่อบุคคลภายนอก
@@ -1411,42 +1438,40 @@ block body
 
 									tr
 										td.
-											ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง สูงสุด
+											ความรับผิดต่อบุคคลภายนอก ไม่เกิน 50,000 บาทต่อครั้ง
 										td 50,000 
 										td 50,000 
 										td 50,000 
-							table.table.table-bordered.tablelist
-								thead
-									tr
-										td(colspan='4',style="background:#19c5f3;font-size: 2em;padding: 15px;font-family: kanda_exb").
-											เบี้ยประกันภัยรวมภาษี อากร (บาท)				
+							//- table.table.table-bordered.tablelist
+							//- 	thead
+							//- 		tr
+							//- 			td(colspan='4',style="background:#19c5f3;font-size: 2em;padding: 15px;font-family: kanda_exb").
+							//- 				เบี้ยประกันภัยรวมภาษี อากร (บาท)				
 										
-								tbody
-									tr
-										td เบี้ยประกันภัยสุทธิ
-										td 1,861.16 
-										td 3,257.03 
-										td 4,653.90 
+							//- 	tbody
+							//- 		tr
+							//- 			td เบี้ยประกันภัยสุทธิ
+							//- 			td 1,861.16 
+							//- 			td 3,257.03 
+							//- 			td 4,653.90 
 										
-									tr
-										td อากร
-										td 8.00 
-										td 14.00 
-										td 19.00 
+							//- 		tr
+							//- 			td อากร
+							//- 			td 8.00 
+							//- 			td 14.00 
+							//- 			td 19.00 
 
-									tr
-										td ภาษี
-										td 130.84 
-										td 228.97 
-										td 327.10 
+							//- 		tr
+							//- 			td ภาษี
+							//- 			td 130.84 
+							//- 			td 228.97 
+							//- 			td 327.10 
 
-									tr
-										td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
-										td(style="font-family: kanda_exb") 2,000.00 
-										td(style="font-family: kanda_exb") 3,500.00 
-										td(style="font-family: kanda_exb") 5,000.00 
-
-									
+							//- 		tr
+							//- 			td(style="font-family: kanda_exb") เบี้ยประกันภัยรวม
+							//- 			td(style="font-family: kanda_exb") 2,000.00 
+							//- 			td(style="font-family: kanda_exb") 3,500.00 
+							//- 			td(style="font-family: kanda_exb") 5,000.00 
 
 
 		section#sec5.parallax
