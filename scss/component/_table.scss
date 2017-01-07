@@ -274,6 +274,12 @@ td.title:focus::after {
     }
 }
 
+.swipe.cl_3 table tbody tr td,
+.swipe.cl_3 table tbody tr {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
 .swipe.cl_3 .plan-header_text {
     p {
         font-size: 1.8em;

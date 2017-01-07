@@ -11,6 +11,18 @@ $(document).ready(function() {
                     0: {
                         items: 1
                     }
+                },
+                callbacks: true,
+            }).on('changed.owl.carousel', function(event) {
+                if (event.item.index == 0) {
+                    $(this).parent().find('.prev').addClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
+                } else if (event.item.index + 1 == event.item.count) {
+                    $(this).parent().find('.next').addClass('inactive');
+                    $(this).parent().find('.prev').removeClass('inactive');
+                } else {
+                    $(this).parent().find('.prev').removeClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
                 }
             })
         }, 300)
@@ -27,6 +39,18 @@ $(document).ready(function() {
                     0: {
                         items: 1
                     }
+                },
+                callbacks: true,
+            }).on('changed.owl.carousel', function(event) {
+                if (event.item.index == 0) {
+                    $(this).parent().find('.prev').addClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
+                } else if (event.item.index + 1 == event.item.count) {
+                    $(this).parent().find('.next').addClass('inactive');
+                    $(this).parent().find('.prev').removeClass('inactive');
+                } else {
+                    $(this).parent().find('.prev').removeClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
                 }
             })
         }, 300)
@@ -43,6 +67,18 @@ $(document).ready(function() {
                     0: {
                         items: 1
                     }
+                },
+                callbacks: true,
+            }).on('changed.owl.carousel', function(event) {
+                if (event.item.index == 0) {
+                    $(this).parent().find('.prev').addClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
+                } else if (event.item.index + 1 == event.item.count) {
+                    $(this).parent().find('.next').addClass('inactive');
+                    $(this).parent().find('.prev').removeClass('inactive');
+                } else {
+                    $(this).parent().find('.prev').removeClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
                 }
             })
         }, 300)
@@ -59,6 +95,18 @@ $(document).ready(function() {
                     0: {
                         items: 1
                     }
+                },
+                callbacks: true,
+            }).on('changed.owl.carousel', function(event) {
+                if (event.item.index == 0) {
+                    $(this).parent().find('.prev').addClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
+                } else if (event.item.index + 1 == event.item.count) {
+                    $(this).parent().find('.next').addClass('inactive');
+                    $(this).parent().find('.prev').removeClass('inactive');
+                } else {
+                    $(this).parent().find('.prev').removeClass('inactive');
+                    $(this).parent().find('.next').removeClass('inactive');
                 }
             })
         }, 300)
@@ -66,7 +114,12 @@ $(document).ready(function() {
 
     $(".owl-carousel").each(function() {
         var $this = $(this);
+
+        var itemCount = $this.find(".item").length;
+        var currentItem = $this.find(".active");
+
         // Custom Navigation Events
+
         $this.parent().find(".next").click(function() {
             $this.trigger('next.owl.carousel');
         });
@@ -139,13 +192,13 @@ $(document).ready(function() {
                                 scrollTop: (target.offset().top - 100)
                             }, 400);
                             return false;
-                        } else if(target.selector == '#sec3') {
+                        } else if (target.selector == '#sec3') {
                             $('html, body').animate({
-                                scrollTop: (target.offset().top+70)
+                                scrollTop: (target.offset().top + 70)
                             }, 400);
                             return false;
 
-                        }else {
+                        } else {
                             $('html, body').animate({
                                 scrollTop: (target.offset().top)
                             }, 400);
